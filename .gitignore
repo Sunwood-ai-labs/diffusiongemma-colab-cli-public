@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+videos/**/qa/
+videos/**/qa/*frames*/
+videos/**/archive/
+
+# Local/private credentials must never be committed.
+.env
+*.local.*
+private/
+token.json
+credentials.json
+
+# Large runtime artifacts are summarized in results/*.md/json.
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.gguf
+*.tar.gz
+*.zip

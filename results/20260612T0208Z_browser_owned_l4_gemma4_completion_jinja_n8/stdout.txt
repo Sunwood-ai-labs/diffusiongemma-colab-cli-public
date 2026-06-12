@@ -1,0 +1,2 @@
+Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.-fmt- Labeled- Imvent
+

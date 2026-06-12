@@ -1,0 +1,23 @@
+{
+  "cmd": [
+    "/content/llama.cpp/build/bin/llama-cli",
+    "-m",
+    "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf",
+    "-p",
+    "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.",
+    "-n",
+    "8",
+    "--temp",
+    "0.2",
+    "-ngl",
+    "99",
+    "--no-warmup",
+    "-no-cnv",
+    "-st"
+  ],
+  "returncode": 0,
+  "elapsed_sec": 12.459,
+  "metrics": {},
+  "stdout_tail": "--no-conversation is not supported by llama-cli\nplease use llama-completion instead\n\nLoading model... |\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b \b\n\n\n▄▄ ▄▄\n██ ██\n██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄\n██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██\n██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀\n                                    ██    ██\n                                    ▀▀    ▀▀\n\nbuild      : b9599-7ea238c68\nmodel      : gemma-4-26B-A4B-it-Q4_K_M.gguf\nmodalities : text\n\navailable commands:\n  /exit or Ctrl+C     stop or exit\n  /regen              regenerate the last response\n  /clear              clear the chat history\n  /read <file>        add a text file\n  /glob <pattern>     add text files using globbing pattern\n\n\n> Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.\n\n|\b-\b\\\b \b[Start thinking]\n*   Topic: Robot\n\n[ Prompt: 168.0 t/s | Generation: 63.9 t/s ]\n\nExiting...\n",
+  "stderr_tail": ""
+}

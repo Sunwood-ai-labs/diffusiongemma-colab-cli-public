@@ -1,0 +1,18 @@
+{"ts": "2026-06-11T16:55:42.586863+00:00", "event": "start", "prompt": "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "n_predict": "8", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T165542Z_gemma4_completion_n8_speed"}
+{"ts": "2026-06-11T16:55:47.210648+00:00", "event": "gpu", "name": "NVIDIA L4", "total_memory_gib": 22.034}
+{"ts": "2026-06-11T16:55:47.211506+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T16:55:53.722624+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 6.51}
+{"ts": "2026-06-11T16:55:53.723532+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T16:55:59.957891+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 6.234}
+{"ts": "2026-06-11T16:55:59.958660+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T16:56:04.712633+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.753}
+{"ts": "2026-06-11T16:56:04.713631+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T16:56:08.660252+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T16:56:08.661020+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T16:56:43.610467+00:00", "event": "checkout_done", "fetch_returncode": 0, "checkout_returncode": 0}
+{"ts": "2026-06-11T16:56:43.611161+00:00", "event": "build_start"}
+{"ts": "2026-06-11T17:06:30.881303+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 575.407}
+{"ts": "2026-06-11T17:06:30.882323+00:00", "event": "download_start"}
+{"ts": "2026-06-11T17:07:22.175372+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 51.292}
+{"ts": "2026-06-11T17:07:22.176793+00:00", "event": "inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-completion", "-m", "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf", "-p", "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "-n", "8", "--temp", "0.2", "-ngl", "99", "--no-warmup"]}
+{"ts": "2026-06-11T17:07:33.814036+00:00", "event": "inference_done", "returncode": -6, "elapsed_sec": 11.637, "error": null}

@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DiffusionGemma Denoising Replay</title>
+    <style>
+      :root {
+        --canvas: #0b0f14;
+        --panel: #121922;
+        --panel-2: #0d141c;
+        --border: #263241;
+        --text: #f2f6fb;
+        --muted: #9aa8b8;
+        --green: #3ddc97;
+        --blue: #60a5fa;
+        --amber: #f3b84b;
+        --red: #ff6b6b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--canvas);
+        color: var(--text);
+        font-family: Inter, Arial, sans-serif;
+      }
+
+      #main {
+        width: 1920px;
+        height: 1080px;
+        position: relative;
+        overflow: hidden;
+        background:
+          linear-gradient(rgba(96, 165, 250, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(96, 165, 250, 0.05) 1px, transparent 1px),
+          var(--canvas);
+        background-size: 64px 64px;
+      }
+
+      .scene {
+        width: 100%;
+        height: 100%;
+        padding: 46px 62px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 470px;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+        gap: 22px;
+      }
+
+      .header {
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 16px;
+      }
+
+      .eyebrow {
+        color: var(--green);
+        font: 800 24px/1 JetBrains Mono, Menlo, monospace;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 57px;
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .meta {
+        color: var(--muted);
+        font: 700 21px/1.35 JetBrains Mono, Menlo, monospace;
+        text-align: right;
+      }
+
+      .canvas-panel {
+        min-width: 0;
+        min-height: 0;
+        background: rgba(18, 25, 34, 0.94);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 26px;
+        display: grid;
+        grid-template-rows: auto auto minmax(0, 1fr) auto;
+        gap: 18px;
+      }
+
+      .prompt {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 16px;
+        align-items: baseline;
+        background: var(--panel-2);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 17px 20px;
+      }
+
+      .label {
+        color: var(--blue);
+        font: 800 21px/1 JetBrains Mono, Menlo, monospace;
+      }
+
+      .prompt-text {
+        font-size: 27px;
+        line-height: 1.25;
+      }
+
+      .step-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .step-title {
+        font: 800 30px/1 JetBrains Mono, Menlo, monospace;
+        color: var(--text);
+      }
+
+      .step-caption {
+        font: 700 22px/1.2 JetBrains Mono, Menlo, monospace;
+        color: var(--muted);
+      }
+
+      .canvas {
+        position: relative;
+        min-height: 0;
+        background: #070b10;
+        border: 1px solid #1f2b38;
+        border-radius: 8px;
+        padding: 22px;
+        overflow: hidden;
+      }
+
+      .snapshot {
+        position: absolute;
+        inset: 22px;
+        display: grid;
+        grid-template-rows: repeat(7, minmax(48px, auto));
+        gap: 12px;
+        opacity: 0;
+      }
+
+      .snapshot.s0 {
+        opacity: 1;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        align-content: flex-start;
+      }
+
+      .tok {
+        font: 800 25px/1 JetBrains Mono, Menlo, monospace;
+        border-radius: 7px;
+        padding: 8px 10px;
+        background: #111b25;
+        border: 1px solid rgba(154, 168, 184, 0.22);
+        color: var(--text);
+        min-height: 43px;
+      }
+
+      .mask {
+        color: rgba(154, 168, 184, 0.62);
+        background: #172231;
+      }
+
+      .fixed {
+        color: #d7fbe8;
+        border-color: rgba(61, 220, 151, 0.45);
+        background: rgba(61, 220, 151, 0.08);
+      }
+
+      .wrong {
+        color: #ffd38a;
+        border-color: rgba(243, 184, 75, 0.55);
+        background: rgba(243, 184, 75, 0.08);
+      }
+
+      .thought {
+        color: #c6d4e4;
+        border-color: rgba(96, 165, 250, 0.35);
+        background: rgba(96, 165, 250, 0.08);
+      }
+
+      .progress {
+        display: grid;
+        gap: 12px;
+      }
+
+      .ticks {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+      }
+
+      .tick {
+        background: var(--panel-2);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px;
+        text-align: center;
+        color: var(--muted);
+        font: 800 20px/1 JetBrains Mono, Menlo, monospace;
+      }
+
+      .bar {
+        height: 14px;
+        background: #172231;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .fill {
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--blue), var(--green));
+      }
+
+      .side {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        min-width: 0;
+      }
+
+      .card {
+        background: rgba(18, 25, 34, 0.94);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 22px;
+      }
+
+      .card-title {
+        color: var(--muted);
+        font: 800 21px/1 JetBrains Mono, Menlo, monospace;
+        margin-bottom: 16px;
+      }
+
+      .stat {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px;
+        align-items: baseline;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(38, 50, 65, 0.8);
+        font-size: 23px;
+      }
+
+      .stat:last-child {
+        border-bottom: none;
+      }
+
+      .stat-value {
+        color: var(--green);
+        font: 800 23px/1 JetBrains Mono, Menlo, monospace;
+      }
+
+      .note p {
+        margin: 0;
+        color: var(--text);
+        font-size: 25px;
+        line-height: 1.35;
+      }
+
+      .note strong {
+        color: var(--amber);
+      }
+
+      .legend {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .legend-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--muted);
+        font-size: 22px;
+      }
+
+      .swatch {
+        width: 34px;
+        height: 28px;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        background: #172231;
+      }
+
+      .swatch.fixed {
+        background: rgba(61, 220, 151, 0.18);
+        border-color: rgba(61, 220, 151, 0.55);
+      }
+
+      .swatch.wrong {
+        background: rgba(243, 184, 75, 0.18);
+        border-color: rgba(243, 184, 75, 0.55);
+      }
+
+      .footer {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      .verdict {
+        background: #101823;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 18px 24px;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+
+      .verdict strong {
+        color: var(--green);
+      }
+
+      .verdict.warn strong {
+        color: var(--amber);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main" data-composition-id="main" data-start="0" data-duration="18" data-width="1920" data-height="1080">
+      <div class="scene">
+        <header class="header">
+          <div>
+            <div class="eyebrow">DISCRETE DIFFUSION REPLAY</div>
+            <h1>Random-token canvas denoising</h1>
+          </div>
+          <div class="meta">
+            reconstructed from final stdout + sampler log<br />
+            L4 / Q4_K_M / 27 actual steps, max 48
+          </div>
+        </header>
+
+        <main class="canvas-panel">
+          <div class="prompt">
+            <div class="label">PROMPT</div>
+            <div class="prompt-text">日本語で、DiffusionGemmaの特徴を3点だけ簡潔に説明してください。</div>
+          </div>
+
+          <div class="step-head">
+            <div class="step-title">step <span class="step-num">0</span> / 27 <span style="color:#9aa8b8">(max 48)</span></div>
+            <div class="step-caption">random/noisy token positions are being refined</div>
+          </div>
+
+          <section class="canvas">
+            <div class="snapshot s0">
+              <div class="row"><span class="tok mask">rand_42</span><span class="tok mask">tok_91</span><span class="tok mask">noise</span><span class="tok mask">▣</span><span class="tok mask">tok_17</span><span class="tok mask">rand_08</span></div>
+              <div class="row"><span class="tok mask">noise</span><span class="tok mask">tok_64</span><span class="tok mask">▣</span><span class="tok mask">rand_29</span><span class="tok mask">tok_03</span></div>
+              <div class="row"><span class="tok mask">rand_77</span><span class="tok mask">noise</span><span class="tok mask">tok_50</span><span class="tok mask">▣</span><span class="tok mask">rand_11</span></div>
+              <div class="row"><span class="tok mask">tok_38</span><span class="tok mask">noise</span><span class="tok mask">rand_05</span><span class="tok mask">▣</span></div>
+              <div class="row"><span class="tok mask">rand_20</span><span class="tok mask">tok_84</span><span class="tok mask">noise</span><span class="tok mask">▣</span></div>
+            </div>
+
+            <div class="snapshot s8">
+              <div class="row"><span class="tok thought">&lt;|channel&gt;thought</span></div>
+              <div class="row"><span class="tok mask">tok_64</span><span class="tok fixed">Topic:</span><span class="tok fixed">DiffusionGemma.</span><span class="tok mask">rand_29</span></div>
+              <div class="row"><span class="tok mask">noise</span><span class="tok mask">tok_50</span><span class="tok mask">▣</span><span class="tok mask">rand_11</span></div>
+              <div class="row"><span class="tok mask">tok_38</span><span class="tok mask">noise</span><span class="tok mask">rand_05</span></div>
+            </div>
+
+            <div class="snapshot s16">
+              <div class="row"><span class="tok thought">&lt;|channel&gt;thought</span></div>
+              <div class="row"><span class="tok fixed">Topic:</span><span class="tok fixed">DiffusionGemma.</span><span class="tok fixed">Language:</span><span class="tok fixed">Japanese.</span></div>
+              <div class="row"><span class="tok fixed">Constraint:</span><span class="tok fixed">Exactly</span><span class="tok fixed">3</span><span class="tok fixed">points,</span><span class="tok fixed">concise.</span></div>
+              <div class="row"><span class="tok mask">noise</span><span class="tok mask">tok_50</span><span class="tok mask">rand_11</span></div>
+            </div>
+
+            <div class="snapshot s24">
+              <div class="row"><span class="tok thought">&lt;|channel&gt;thought</span></div>
+              <div class="row"><span class="tok fixed">Topic:</span><span class="tok fixed">DiffusionGemma.</span><span class="tok fixed">Language:</span><span class="tok fixed">Japanese.</span></div>
+              <div class="row"><span class="tok fixed">Constraint:</span><span class="tok fixed">Exactly</span><span class="tok fixed">3</span><span class="tok fixed">points,</span><span class="tok fixed">concise.</span></div>
+              <div class="row"><span class="tok fixed">What</span><span class="tok fixed">is</span><span class="tok fixed">DiffusionGemma?</span><span class="tok fixed">Google</span><span class="tok fixed">+</span><span class="tok mask">tok_50</span></div>
+              <div class="row"><span class="tok mask">noise</span><span class="tok mask">rand_11</span></div>
+            </div>
+
+            <div class="snapshot s27">
+              <div class="row"><span class="tok thought">&lt;|channel&gt;thought</span></div>
+              <div class="row"><span class="tok fixed">Topic:</span><span class="tok fixed">DiffusionGemma.</span><span class="tok fixed">Language:</span><span class="tok fixed">Japanese.</span></div>
+              <div class="row"><span class="tok fixed">Constraint:</span><span class="tok fixed">Exactly</span><span class="tok fixed">3</span><span class="tok fixed">points,</span><span class="tok fixed">concise.</span></div>
+              <div class="row"><span class="tok fixed">What</span><span class="tok fixed">is</span><span class="tok fixed">DiffusionGemma?</span><span class="tok wrong">diffusion-based</span><span class="tok wrong">image</span></div>
+              <div class="row"><span class="tok wrong">Google + diffusion-based image generation/editing...</span></div>
+              <div class="row"><span class="tok fixed">Draft: Gemmaの言語モデル能力をベースにしており...</span></div>
+              <div class="row"><span class="tok wrong">Draft: 拡散モデルを統合しており、高品質な画像を生成できます。</span></div>
+              <div class="row"><span class="tok fixed">total time: 14033.83ms, 27 steps over 1 block</span></div>
+            </div>
+          </section>
+
+          <div class="progress">
+            <div class="ticks">
+              <div class="tick t0">0</div>
+              <div class="tick t8">8</div>
+              <div class="tick t16">16</div>
+              <div class="tick t24">24</div>
+              <div class="tick t27">27 stop</div>
+              <div class="tick t48">48 max</div>
+            </div>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+        </main>
+
+        <aside class="side">
+          <div class="card">
+            <div class="card-title">runtime evidence</div>
+            <div class="stat"><span>GPU</span><span class="stat-value">NVIDIA L4</span></div>
+            <div class="stat"><span>VRAM</span><span class="stat-value">22.034 GiB</span></div>
+            <div class="stat"><span>GGUF</span><span class="stat-value">Q4_K_M</span></div>
+            <div class="stat"><span>actual steps</span><span class="stat-value">27</span></div>
+            <div class="stat"><span>max steps</span><span class="stat-value">48</span></div>
+            <div class="stat"><span>diffusion core</span><span class="stat-value">14.03 s</span></div>
+            <div class="stat"><span>command</span><span class="stat-value">29.424 s</span></div>
+          </div>
+          <div class="card legend">
+            <div class="card-title">what the colors mean</div>
+            <div class="legend-row"><span class="swatch"></span><span>random/noisy or unstable token</span></div>
+            <div class="legend-row"><span class="swatch fixed"></span><span>stabilized raw output</span></div>
+            <div class="legend-row"><span class="swatch wrong"></span><span>stabilized but factually wrong</span></div>
+          </div>
+          <div class="card note">
+            <div class="card-title">accuracy note</div>
+            <p>
+              This is a <strong>conceptual reconstruction</strong>. The run did not save
+              exact hidden token states; random-token labels are illustrative, not observed token IDs.
+            </p>
+          </div>
+        </aside>
+
+        <footer class="footer">
+          <div class="verdict"><strong>Closer to discrete diffusion:</strong> tokens stabilize across the canvas instead of appearing left-to-right.</div>
+          <div class="verdict warn"><strong>Still honest:</strong> exact per-step token probabilities were not captured in this run.</div>
+        </footer>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        const snapshots = [".s0", ".s8", ".s16", ".s24", ".s27"];
+        function showSnapshot(selector, at, step, caption) {
+          tl.to(snapshots.filter((s) => s !== selector).join(","), { opacity: 0, duration: 0.28, overwrite: "auto" }, at);
+          tl.to(selector, { opacity: 1, duration: 0.38, ease: "power2.out", overwrite: "auto" }, at + 0.02);
+          tl.to(".step-num", { textContent: String(step), duration: 0.01 }, at);
+          tl.to(".step-caption", { textContent: caption, duration: 0.01 }, at);
+          tl.to(`.t${step}`, { color: "#3ddc97", borderColor: "rgba(61,220,151,0.8)", duration: 0.2 }, at);
+        }
+
+        tl.from(".header", { y: -24, opacity: 0, duration: 0.55, ease: "power3.out" }, 0);
+        tl.from(".canvas-panel", { y: 22, opacity: 0, duration: 0.55, ease: "power2.out" }, 0.35);
+        tl.from(".side .card", { x: 24, opacity: 0, duration: 0.45, stagger: 0.14, ease: "power2.out" }, 0.65);
+        tl.to(".fill", { width: "100%", duration: 13.4, ease: "power1.inOut" }, 1.35);
+        showSnapshot(".s0", 1.1, 0, "canvas starts as random vocabulary-token noise");
+        showSnapshot(".s8", 2.7, 8, "some low-entropy tokens stabilize");
+        showSnapshot(".s16", 4.45, 16, "prompt planning text becomes stable");
+        showSnapshot(".s24", 6.25, 24, "answer skeleton appears across the canvas");
+        showSnapshot(".s27", 8.1, 27, "adaptive stopping: final raw stdout block is fixed");
+        tl.to(".t48", { color: "#9aa8b8", borderColor: "rgba(38,50,65,1)", duration: 0.2 }, 8.1);
+        tl.from(".verdict", { y: 22, opacity: 0, duration: 0.48, stagger: 0.12, ease: "power2.out" }, 14.2);
+        window.__timelines["main"] = tl;
+      </script>
+    </div>
+  </body>
+</html>

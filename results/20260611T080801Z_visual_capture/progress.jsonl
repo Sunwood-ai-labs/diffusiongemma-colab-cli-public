@@ -1,0 +1,20 @@
+{"ts": "2026-06-11T08:08:01.645123+00:00", "event": "start", "session_label": "diffusiongemma-l4-gguf-visual", "model_repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "gguf_include": "*Q4_K_M*", "prompt": "日本語で、DiffusionGemmaの特徴を3点だけ簡潔に説明してください。", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T080801Z", "drive_mounted": false, "capture_mode": "pty_ansi_terminal_visual_diffusion"}
+{"ts": "2026-06-11T08:08:01.905711+00:00", "event": "gpu", "gpu": "NVIDIA L4", "vram": 22.034}
+{"ts": "2026-06-11T08:08:01.906511+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T08:08:05.921519+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 4.014}
+{"ts": "2026-06-11T08:08:05.922343+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T08:08:08.547747+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 2.625}
+{"ts": "2026-06-11T08:08:08.548444+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T08:08:11.256285+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 2.707}
+{"ts": "2026-06-11T08:08:11.257121+00:00", "event": "fetch_pr_start"}
+{"ts": "2026-06-11T08:08:12.208332+00:00", "event": "fetch_pr_done", "returncode": 0}
+{"ts": "2026-06-11T08:08:12.209074+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T08:08:12.244063+00:00", "event": "checkout_done", "returncode": 0}
+{"ts": "2026-06-11T08:08:12.244583+00:00", "event": "cmake_config_start"}
+{"ts": "2026-06-11T08:08:13.337178+00:00", "event": "cmake_config_done", "returncode": 0}
+{"ts": "2026-06-11T08:08:13.337956+00:00", "event": "build_start"}
+{"ts": "2026-06-11T08:08:14.051660+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 0.713}
+{"ts": "2026-06-11T08:08:14.052647+00:00", "event": "download_start", "repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-11T08:08:14.978937+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 0.926}
+{"ts": "2026-06-11T08:08:15.135152+00:00", "event": "inference_visual_start", "model": "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "ansi_log": "/content/diffusiongemma-colab-cli-public/20260611T080801Z/visual_terminal_capture.ansi", "llama_log": "/content/diffusiongemma-colab-cli-public/20260611T080801Z/llama_diffusion_visual.log"}
+{"ts": "2026-06-11T08:08:40.000433+00:00", "event": "inference_visual_done", "returncode": -9, "elapsed_sec": 24.864, "ansi_bytes": 20429}

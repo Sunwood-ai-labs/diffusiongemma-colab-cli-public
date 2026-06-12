@@ -1,0 +1,22 @@
+{"ts": "2026-06-11T12:42:46.529704+00:00", "event": "start", "prompt": "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T124246Z_gemma4_short_speed"}
+{"ts": "2026-06-11T12:42:51.004006+00:00", "event": "gpu", "name": "NVIDIA L4", "total_memory_gib": 22.034}
+{"ts": "2026-06-11T12:42:51.004951+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T12:42:57.599359+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 6.594}
+{"ts": "2026-06-11T12:42:57.600134+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T12:43:03.839352+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 6.239}
+{"ts": "2026-06-11T12:43:03.840267+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T12:43:08.522105+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.681}
+{"ts": "2026-06-11T12:43:08.522961+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T12:43:12.596893+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T12:43:12.597650+00:00", "event": "fetch_pr_start"}
+{"ts": "2026-06-11T12:43:43.128228+00:00", "event": "fetch_pr_done", "returncode": 0}
+{"ts": "2026-06-11T12:43:43.129020+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T12:43:43.618502+00:00", "event": "checkout_done", "returncode": 0}
+{"ts": "2026-06-11T12:43:43.619458+00:00", "event": "cmake_config_start"}
+{"ts": "2026-06-11T12:43:55.593334+00:00", "event": "cmake_config_done", "returncode": 0}
+{"ts": "2026-06-11T12:43:55.594205+00:00", "event": "build_start"}
+{"ts": "2026-06-11T12:54:16.339787+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 620.745}
+{"ts": "2026-06-11T12:54:16.340935+00:00", "event": "download_start", "repo": "ggml-org/gemma-4-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-11T12:55:38.631707+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 82.29}
+{"ts": "2026-06-11T12:55:38.633188+00:00", "event": "inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-cli", "-m", "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf", "-p", "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "-n", "32", "--temp", "0.2", "-ngl", "99", "--no-warmup"]}
+{"ts": "2026-06-11T13:00:48.100055+00:00", "event": "inference_done", "returncode": null, "elapsed_sec": 307.251}

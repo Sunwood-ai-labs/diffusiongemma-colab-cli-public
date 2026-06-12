@@ -1,0 +1,18 @@
+{"ts": "2026-06-11T16:25:49.984640+00:00", "event": "start", "prompt": "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "n_predict": "8", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T162549Z_gemma4_nocnv_speed"}
+{"ts": "2026-06-11T16:25:54.365809+00:00", "event": "gpu", "name": "NVIDIA L4", "total_memory_gib": 22.034}
+{"ts": "2026-06-11T16:25:54.366701+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T16:26:00.868665+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 6.501}
+{"ts": "2026-06-11T16:26:00.869573+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T16:26:06.920584+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 6.05}
+{"ts": "2026-06-11T16:26:06.921334+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T16:26:11.593150+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.671}
+{"ts": "2026-06-11T16:26:11.594108+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T16:26:15.178502+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T16:26:15.179312+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T16:26:46.283561+00:00", "event": "checkout_done", "fetch_returncode": 0, "checkout_returncode": 0}
+{"ts": "2026-06-11T16:26:46.284310+00:00", "event": "build_start"}
+{"ts": "2026-06-11T16:37:01.029037+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 603.114}
+{"ts": "2026-06-11T16:37:01.030187+00:00", "event": "download_start"}
+{"ts": "2026-06-11T16:37:51.303056+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 50.272}
+{"ts": "2026-06-11T16:37:51.308740+00:00", "event": "inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-cli", "-m", "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf", "-p", "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "-n", "8", "--temp", "0.2", "-ngl", "99", "--no-warmup", "-no-cnv"]}
+{"ts": "2026-06-11T16:48:17.724599+00:00", "event": "inference_done", "returncode": null, "elapsed_sec": 621.339, "error": "TimeoutExpired"}

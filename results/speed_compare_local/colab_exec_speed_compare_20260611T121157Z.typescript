@@ -1,0 +1,25 @@
+{"ts": "2026-06-11T12:12:04.405938+00:00", "event": "start", "prompt": "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T121204Z_speed_compare", "comparison_note": "DiffusionGemma canvas-throughput is not identical to autoregressive Gemma 4 decode tok/s."}
+{"ts": "2026-06-11T12:12:09.286141+00:00", "event": "gpu", "gpu": "NVIDIA L4", "vram": 22.034}
+{"ts": "2026-06-11T12:12:09.287030+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T12:12:16.832621+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 7.545}
+{"ts": "2026-06-11T12:12:16.833594+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T12:12:23.204247+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 6.37}
+{"ts": "2026-06-11T12:12:23.205046+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T12:12:27.422901+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.217}
+{"ts": "2026-06-11T12:12:27.423863+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T12:12:31.669631+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T12:12:31.670389+00:00", "event": "fetch_pr_start"}
+{"ts": "2026-06-11T12:13:09.077475+00:00", "event": "fetch_pr_done", "returncode": 0}
+{"ts": "2026-06-11T12:13:09.078294+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T12:13:09.672367+00:00", "event": "checkout_done", "returncode": 0}
+{"ts": "2026-06-11T12:13:09.673055+00:00", "event": "cmake_config_start"}
+{"ts": "2026-06-11T12:13:21.821104+00:00", "event": "cmake_config_done", "returncode": 0}
+{"ts": "2026-06-11T12:13:21.821938+00:00", "event": "build_start"}
+{"ts": "2026-06-11T12:23:44.272010+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 622.45}
+{"ts": "2026-06-11T12:23:44.273127+00:00", "event": "diffusiongemma_download_start", "repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-11T12:24:54.343969+00:00", "event": "diffusiongemma_download_done", "returncode": 0, "elapsed_sec": 70.07}
+{"ts": "2026-06-11T12:24:54.355660+00:00", "event": "gemma4_download_start", "repo": "unsloth/gemma-4-26B-A4B-it-GGUF", "include": "*UD-Q4_K_M*"}
+{"ts": "2026-06-11T12:25:41.882858+00:00", "event": "gemma4_download_done", "returncode": 0, "elapsed_sec": 47.526}
+{"ts": "2026-06-11T12:25:41.888326+00:00", "event": "diffusiongemma_inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-diffusion-cli", "-m", "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "-p", "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "-n", "96", "--temp", "0.2"]}
+{"ts": "2026-06-11T12:26:50.750969+00:00", "event": "diffusiongemma_inference_done", "returncode": 0, "elapsed_sec": 68.862}
+{"ts": "2026-06-11T12:26:50.751996+00:00", "event": "gemma4_inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-cli", "-m", "/content/models/unsloth__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-UD-Q4_K_M.gguf", "-p", "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "-n", "256", "--temp", "0.2", "-ngl", "99", "--no-warmup"]}

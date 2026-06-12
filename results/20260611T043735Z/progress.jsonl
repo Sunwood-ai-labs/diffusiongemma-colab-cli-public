@@ -1,0 +1,6 @@
+{"ts": "2026-06-11T04:37:35.871720+00:00", "event": "start", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T043735Z", "model_id": "google/diffusiongemma-26B-A4B-it"}
+{"ts": "2026-06-11T04:37:35.880467+00:00", "event": "install_start"}
+{"ts": "2026-06-11T04:37:43.097405+00:00", "event": "install_done", "returncode": 0}
+{"ts": "2026-06-11T04:37:46.624936+00:00", "event": "hf_model_info_start", "model_id": "google/diffusiongemma-26B-A4B-it"}
+{"ts": "2026-06-11T04:37:56.942200+00:00", "event": "hf_model_info_done", "sha": "0f28bc42f588fbd8f71e08102b1c3960298a1358"}
+{"ts": "2026-06-11T04:37:56.943009+00:00", "event": "done", "status": "blocked_drive_not_mounted", "files": ["progress.jsonl"]}

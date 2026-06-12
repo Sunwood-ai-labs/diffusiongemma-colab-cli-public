@@ -1,0 +1,31 @@
+[34m0.01.254.504[0m [35mW load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.255.445[0m [35mW load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.314.077[0m [35mW load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[0m[34m0.06.419.118[0m [32mI [0mdiffusion: -n 96 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+[34m0.06.419.126[0m [32mI [0mdiffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+[34m0.06.419.947[0m [35mW llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+[0m[34m0.06.430.590[0m [35mW sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+[0m[34m0.06.430.599[0m [35mW sched_reserve: Flash Attention was auto, set to disabled
+[0m[34m0.15.148.931[0m [32mI [0mdiffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+[34m0.15.150.474[0m [32mI [0mdiffusion_eb: max_steps=48 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on
+
+<|channel>thought
+
+*   Topic: DiffusionGemma.
+*   Language: Japanese.
+*   Constraint: Exactly 3 points, concise.
+
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Gemma family) that combines the Gemma language model with a diffusion-based image-generation framework.
+    *   *Key features:*
+        1.  It uses Gemma as the backbone for text understanding/conditioning (text encoder).
+        2.  It uses a diffusion process for generating content (usually images or similar).
+        3.  It's efficient or capable of high-quality generation by leveraging the pre-trained language model.
+
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせており、テキストに基づいた画像生成ができる。
+    *   *Point 2:* High-quality generation based on text prompts.
+        *   Draft: テキストの理解能力が高いため、プロンプトに忠実で高品質な画像を生成できる。
+    *   *Point 3:* Efficiency/Architecture.
+        *   Draft: 既存の
+total time: 9289.70ms, time per step: 442.37ms (21 steps over 1 blocks, entropy-bound)
+throughput: 27.6 tok/s (256 tok in 9289.70ms), in-step parallel 579 tok/s (256-tok canvas x 21.0 steps/block)

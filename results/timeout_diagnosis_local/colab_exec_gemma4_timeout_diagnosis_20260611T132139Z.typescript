@@ -1,0 +1,22 @@
+{"ts": "2026-06-11T13:21:53.906979+00:00", "event": "start", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T132153Z_gemma4_timeout_diagnosis", "prompt": "Write one short sentence about espresso on Mars."}
+{"ts": "2026-06-11T13:21:54.211095+00:00", "event": "preflight_done"}
+{"ts": "2026-06-11T13:21:54.211781+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T13:22:05.962798+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 11.75}
+{"ts": "2026-06-11T13:22:05.963616+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T13:22:13.311575+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 7.347}
+{"ts": "2026-06-11T13:22:13.312350+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T13:22:18.168404+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.856}
+{"ts": "2026-06-11T13:22:18.169370+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T13:22:24.035774+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T13:22:24.036488+00:00", "event": "checkout_pr_start"}
+{"ts": "2026-06-11T13:23:10.168724+00:00", "event": "checkout_pr_done", "fetch_returncode": 0, "checkout_returncode": 0}
+{"ts": "2026-06-11T13:23:10.169491+00:00", "event": "build_start"}
+{"ts": "2026-06-11T13:33:46.440495+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 624.02}
+{"ts": "2026-06-11T13:33:46.441645+00:00", "event": "download_start", "repo": "ggml-org/gemma-4-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-11T13:34:35.521427+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 49.079}
+{"ts": "2026-06-11T13:34:35.526649+00:00", "event": "inference_probe_start", "label": "ngl_99_n1", "timeout": 180, "cmd": ["/content/llama.cpp/build/bin/llama-cli", "-m", "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf", "-p", "Write one short sentence about espresso on Mars.", "-n", "1", "--temp", "0.2", "--no-warmup", "--log-verbosity", "5", "-ngl", "99"]}
+{"ts": "2026-06-11T13:37:41.539434+00:00", "event": "inference_probe_done", "label": "ngl_99_n1", "returncode": 0, "timed_out": true, "elapsed_sec": 184.718, "stdout_bytes": 794793602, "stderr_bytes": 224758}
+{"ts": "2026-06-11T13:37:41.540319+00:00", "event": "inference_probe_start", "label": "ngl_0_n1", "timeout": 180, "cmd": ["/content/llama.cpp/build/bin/llama-cli", "-m", "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf", "-p", "Write one short sentence about espresso on Mars.", "-n", "1", "--temp", "0.2", "--no-warmup", "--log-verbosity", "5", "-ngl", "0"]}
+{"ts": "2026-06-11T13:40:46.840033+00:00", "event": "inference_probe_done", "label": "ngl_0_n1", "returncode": 0, "timed_out": true, "elapsed_sec": 183.919, "stdout_bytes": 844409922, "stderr_bytes": 151656}
+RESULT_DIR=/content/diffusiongemma-colab-cli-public/20260611T132153Z_gemma4_timeout_diagnosis
+RESULT_STATUS=completed

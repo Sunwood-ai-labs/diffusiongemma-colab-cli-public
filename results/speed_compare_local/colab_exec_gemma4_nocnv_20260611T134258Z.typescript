@@ -1,0 +1,17 @@
+{"ts": "2026-06-11T13:43:13.212641+00:00", "event": "start", "prompt": "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T134313Z_gemma4_nocnv_speed"}
+{"ts": "2026-06-11T13:43:17.874646+00:00", "event": "gpu", "name": "NVIDIA L4", "total_memory_gib": 22.034}
+{"ts": "2026-06-11T13:43:17.875547+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T13:43:24.304315+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 6.428}
+{"ts": "2026-06-11T13:43:24.305126+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T13:43:30.566162+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 6.26}
+{"ts": "2026-06-11T13:43:30.566989+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T13:43:35.287536+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.72}
+{"ts": "2026-06-11T13:43:35.288519+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T13:43:39.195875+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T13:43:39.196645+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T13:44:13.290225+00:00", "event": "checkout_done", "fetch_returncode": 0, "checkout_returncode": 0}
+{"ts": "2026-06-11T13:44:13.290992+00:00", "event": "build_start"}
+{"ts": "2026-06-11T13:54:45.417288+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 620.181}
+{"ts": "2026-06-11T13:54:45.418510+00:00", "event": "download_start"}
+{"ts": "2026-06-11T13:56:57.387649+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 131.968}
+{"ts": "2026-06-11T13:56:57.393277+00:00", "event": "inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-cli", "-m", "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf", "-p", "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.", "-n", "128", "--temp", "0.2", "-ngl", "99", "--no-warmup", "-no-cnv"]}

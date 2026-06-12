@@ -1,0 +1,515 @@
+[34m0.01.265.058[0m [35mW load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.265.996[0m [35mW load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.324.174[0m [35mW load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[0m[34m0.06.359.614[0m [32mI [0mdiffusion: -n 96 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+[34m0.06.359.625[0m [32mI [0mdiffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+[34m0.06.360.425[0m [35mW llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+[0m[34m0.06.370.398[0m [35mW sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+[0m[34m0.06.370.407[0m [35mW sched_reserve: Flash Attention was auto, set to disabled
+[0m[34m0.14.255.906[0m [32mI [0mdiffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+[34m0.14.257.534[0m [32mI [0mdiffusion_eb: max_steps=48 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on sample_reduce=on
+[?25l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23A[?2026hdiffusion step: 0/48 [                                                  ] 0%[K
+ <|channel>thought[K
+*   Subject: Robot barista calibrating espresso shots on[K
+ tiny*.[K
+[K
+*   ::[K
+[K
+[K
+[K
+[K
+[K
+[K
+*   *   ************************************************************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 1/48 [=                                                 ] 2%[K
+ <|channel>thought[K
+*   Subject: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+[K
+*      ::3---...    **[K
+[K
+***** ::///,,,,,,,,,,*,*********************************************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 2/48 [==                                                ] 4%[K
+ <|channel>thought[K
+*   Subject: Robot barista calibrating espresso shots.[K
+    *   Setting: A tiny cafe cafe.[K
+          :: 3-bullet lab note.[K
+    *   Tone:.[K
+[K
+[K
+[K
+    *   Bullet 1:////.*,,,,,,,            ********::****,,,,,,,,****************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 3/48 [===                                               ] 6%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny tiny cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The/// ( ( to,,,,).[K
+[K
+****** :::: ( ( (,,,,,****************************************      .   ..******[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 4/48 [====                                              ] 8%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format:: 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/Environmental ( (gravity,,,).).).[K
+    *   Bullet 2: The// ( ( (,,,,, temperature).[K
+    *        :://// ( (************* :*:*  for        .......************* ****i[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 5/48 [=====                                             ] 10%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format:  3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity/pressure/ Mars Mars)[K
+    *   Bullet 2: The action/calibration (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status ( (,,,[K
+[K
+**).****** :*:* Adjusted Adjusted Adjusted for Mars for for 0...8. to ensure ens[K
+********:*:*ibratedibrated* ibrated   to - -.**************       - ----********[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 6/48 [======                                            ] 12%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity/pressure de Mars Mar[K
+    *   Bullet 2: The action/calibration (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (yield of,,,).).[K
+[K
+    ****   1:*:*1:* Adjusted for Mars's 0..8 Mars gravity to ensure proper flow.[K
+    *   ** 2:*:*ibratedibratedibratedibratedibrated-- to to-----....[K
+***** 3:* Ach achieved achieved  -----------******************* for for for   ..[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 7/48 [=======                                           ] 14%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity,pressure de Mars Mar[K
+    *   Bullet 2: The action/calibration (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of, de---).).[K
+[K
+[K
+[K
+**   *:*:*1:* Adjusted for Mars's 0.38g gravity to ensure proper extraction.[K
+    *   *Bullet 2:*:*ibratedibrated grind size and water- to to for for for--- p[K
+    *   *Bullet 3:* Achieved a 25-second extraction time;--- for--..[K
+[K
+******:*:*:*ibratedibrated pressure for for for 00..........********:**ibratedib[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 8/48 [========                                          ] 16%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/calibration (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot---[K
+[K
+).).[K
+[K
+**    :*:* Adjusted:* Adjusted for Mars's 0.38g gravity to ensure proper extract[K
+    *   *Bullet 2:* Recalibrated grinder size and water pressure to compensate f[K
+    *   *Bullet 3:* Achievedieved consistent 27-second extraction;; de is ready [K
+[K
+    *   *Bullet 1:*:*ibrated pump pressure to Mars0.0.888 Martian gravity to to [K
+    ***Bullet 2:*:*ibratedibrated size size-- compensate compensate compensate f[K
+********:*:*[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 9/48 [=========                                         ] 18%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/calibration (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted Adjusted for Mars's 0.38g gravity to ensure proper [K
+    *   *Bullet 2:* Recalibrated grinder size and water temperature to compensat[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots is re[K
+[K
+    *   *Bullet 1:* Adjustedibrated pump pressure to account for 0.38g Martian g[K
+    *   *Bullet 2:* Recibratedibrated grind micronron to compensate compensate f[K
+    **** 3:*:*[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 10/48 [==========                                        ] 20%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/calibration (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pressure for Mars'' 0.38g gravity to ensure proper [K
+    *   *Bullet 2:* Recalibrated grinder setting and water temperature to compen[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Adjustedibrated pump pressure to account for 0.38g Martian g[K
+    *   *Bullet 2:* Fine-tuned grind microns and water temperature to compensate[K
+    ****  :*:*[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 11/48 [===========                                       ] 22%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/calibration (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pressure for for Mars' 0.38g gravity to ensure prop[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temperature to compe[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and water temperature to compensate[K
+    *   *Bullet 3:*:*[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 12/48 [============                                      ] 25%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temperature to compe[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to compensate [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 13/48 [=============                                     ] 27%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temperature to compe[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 14/48 [==============                                    ] 29%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temperature to compe[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 15/48 [===============                                   ] 31%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temperature to compe[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 16/48 [================                                  ] 33%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temperature to compe[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 17/48 [=================                                 ] 35%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temp to compensate f[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 18/48 [==================                                ] 37%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temp to compensate f[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to compensate [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 19/48 [===================                               ] 39%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temp to compensate f[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 20/48 [====================                              ] 41%[K
+ <|channel>thought[K
+*   Topic: Robot barista calibrating espresso shots.[K
+    *   Setting: Tiny Mars cafe.[K
+    *   Format: Concise 3-bullet lab note.[K
+    *   Constraint: Concise.[K
+[K
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressur[K
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).[K
+    *   Bullet 3: The result/status (quality of the shot, readiness for service)[K
+[K
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure pro[K
+    *   *Bullet 2:* Recalibrated grinder settings and water temp to compensate f[K
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are r[K
+[K
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravit[K
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for [K
+    *   *Bullet 3:* Successfully[K
+[K
+[K
+[K
+[K
+[K[?2026l[22A[J[?25h
+<|channel>thought
+*   Topic: Robot barista calibrating espresso shots.
+    *   Setting: Tiny Mars cafe.
+    *   Format: Concise 3-bullet lab note.
+    *   Constraint: Concise.
+
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressure on Mars).
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).
+    *   Bullet 3: The result/status (quality of the shot, readiness for service).
+
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure proper extraction.
+    *   *Bullet 2:* Recalibrated grinder settings and water temp to compensate for the low-pressure atmospheric environment.
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are ready for the morning shift.
+
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravity to maintain crema density.
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for low atmospheric pressure.
+    *   *Bullet 3:* Successfully
+total time: 4551.07ms, time per step: 216.72ms (21 steps over 1 blocks, entropy-bound)
+throughput: 56.3 tok/s (256 tok in 4551.07ms), in-step parallel 1181 tok/s (256-tok canvas x 21.0 steps/block)

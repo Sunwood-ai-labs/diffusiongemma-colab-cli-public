@@ -1,0 +1,85 @@
+{
+  "model_id": "google/diffusiongemma-26B-A4B-it",
+  "prompt": "日本語で、DiffusionGemmaの特徴を3点だけ簡潔に説明してください。",
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "executable": "/usr/bin/python3",
+  "working_directory": "/content",
+  "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T043735Z",
+  "colab": {
+    "content_exists": true,
+    "drive_snapshot_before": {
+      "mount_grep": {
+        "cmd": [
+          "bash",
+          "-lc",
+          "mount | grep /content/drive || true"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "elapsed_sec": 0.008
+      },
+      "drive_exists": false,
+      "mydrive_exists": false
+    }
+  },
+  "gpu": {
+    "nvidia_smi": {
+      "cmd": [
+        "bash",
+        "-lc",
+        "nvidia-smi || true"
+      ],
+      "returncode": 0,
+      "stdout": "Thu Jun 11 04:37:43 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:05:00.0 Off |                    0 |\n| N/A   30C    P0             45W /  600W |       0MiB /  97887MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+      "stderr": "",
+      "elapsed_sec": 0.051
+    },
+    "torch_version": "2.11.0+cu128",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "gpu_total_memory_gib": 94.971
+  },
+  "drive_snapshot_after_deps": {
+    "mount_grep": {
+      "cmd": [
+        "bash",
+        "-lc",
+        "mount | grep /content/drive || true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_sec": 0.003
+    },
+    "drive_exists": false,
+    "mydrive_exists": false
+  },
+  "hf_model_info": {
+    "model_id": "google/diffusiongemma-26B-A4B-it",
+    "sha": "0f28bc42f588fbd8f71e08102b1c3960298a1358",
+    "last_modified": "2026-06-10 13:45:13+00:00",
+    "license": null,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "diffusion_gemma",
+      "image-text-to-text",
+      "conversational",
+      "license:apache-2.0",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "siblings_count": 20
+  },
+  "generation_attempt": {
+    "status": "blocked_drive_not_mounted",
+    "reason": "Drive is not mounted. Skipping long model load so the run does not rely on ephemeral /content outputs."
+  },
+  "status": "blocked_drive_not_mounted",
+  "completed_at": "2026-06-11T04:37:56.942710+00:00",
+  "files": [
+    "progress.jsonl"
+  ]
+}

@@ -1,0 +1,25 @@
+0.00.028.983 I llama_completion: llama backend init
+0.00.029.018 I llama_completion: load the model and apply lora adapter, if any
+0.00.029.041 I common_init_result: fitting params to device memory ...
+0.00.029.041 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.04.745.400 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.04.746.267 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.04.796.983 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+0.10.471.785 W llama_context: n_ctx_seq (230912) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.10.623.647 I llama_completion: llama threadpool init, n_threads = 6
+0.10.625.155 I llama_completion: chat template is available, enabling conversation mode (disable it with -no-cnv)
+0.10.625.160 W *** User-specified prompt will pre-start conversation, did you mean to set --system-prompt (-sys) instead?
+/content/llama.cpp/build/bin/libggml-base.so.0(+0x1c77b)[0x7a891ac1c77b]
+/content/llama.cpp/build/bin/libggml-base.so.0(ggml_print_backtrace+0x21f)[0x7a891ac1cbff]
+/content/llama.cpp/build/bin/libggml-base.so.0(+0x30cdf)[0x7a891ac30cdf]
+/lib/x86_64-linux-gnu/libstdc++.so.6(+0xae20c)[0x7a891aa8220c]
+/lib/x86_64-linux-gnu/libstdc++.so.6(+0xae277)[0x7a891aa82277]
+/lib/x86_64-linux-gnu/libstdc++.so.6(+0xae4d8)[0x7a891aa824d8]
+/content/llama.cpp/build/bin/libllama-common.so.0(+0xe345a)[0x7a891b0bd45a]
+/content/llama.cpp/build/bin/libllama-common.so.0(_Z26common_chat_format_examplePK21common_chat_templatesbRKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_St4lessIS8_ESaISt4pairIKS8_S8_EEE+0x6ce)[0x7a891b1ce2de]
+/content/llama.cpp/build/bin/libllama-completion-impl.so(_Z16llama_completioniPPc+0x60c2)[0x7a891b690842]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7a891b473d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7a891b473e40]
+/content/llama.cpp/build/bin/llama-completion(+0x1095)[0x5a63aef4c095]
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  this custom template is not supported, try using --jinja

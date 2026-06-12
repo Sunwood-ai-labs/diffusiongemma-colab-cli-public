@@ -1,0 +1,543 @@
+{"ts": "2026-06-11T08:08:01.645123+00:00", "event": "start", "session_label": "diffusiongemma-l4-gguf-visual", "model_repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "gguf_include": "*Q4_K_M*", "prompt": "日本語で、DiffusionGemmaの特徴を3点だけ簡潔に説明してください。", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T080801Z", "drive_mounted": false, "capture_mode": "pty_ansi_terminal_visual_diffusion"}
+{"ts": "2026-06-11T08:08:01.905711+00:00", "event": "gpu", "gpu": "NVIDIA L4", "vram": 22.034}
+{"ts": "2026-06-11T08:08:01.906511+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T08:08:05.921519+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 4.014}
+{"ts": "2026-06-11T08:08:05.922343+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T08:08:08.547747+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 2.625}
+{"ts": "2026-06-11T08:08:08.548444+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T08:08:11.256285+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 2.707}
+{"ts": "2026-06-11T08:08:11.257121+00:00", "event": "fetch_pr_start"}
+{"ts": "2026-06-11T08:08:12.208332+00:00", "event": "fetch_pr_done", "returncode": 0}
+{"ts": "2026-06-11T08:08:12.209074+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T08:08:12.244063+00:00", "event": "checkout_done", "returncode": 0}
+{"ts": "2026-06-11T08:08:12.244583+00:00", "event": "cmake_config_start"}
+{"ts": "2026-06-11T08:08:13.337178+00:00", "event": "cmake_config_done", "returncode": 0}
+{"ts": "2026-06-11T08:08:13.337956+00:00", "event": "build_start"}
+{"ts": "2026-06-11T08:08:14.051660+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 0.713}
+{"ts": "2026-06-11T08:08:14.052647+00:00", "event": "download_start", "repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-11T08:08:14.978937+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 0.926}
+{"ts": "2026-06-11T08:08:15.135152+00:00", "event": "inference_visual_start", "model": "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "ansi_log": "/content/diffusiongemma-colab-cli-public/20260611T080801Z/visual_terminal_capture.ansi", "llama_log": "/content/diffusiongemma-colab-cli-public/20260611T080801Z/llama_diffusion_visual.log"}
+[34m0.01.254.504[0m [35mW load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.255.445[0m [35mW load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.314.077[0m [35mW load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[0m[34m0.06.419.118[0m [32mI [0mdiffusion: -n 96 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+[34m0.06.419.126[0m [32mI [0mdiffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+[34m0.06.419.947[0m [35mW llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+[0m[34m0.06.430.590[0m [35mW sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+[0m[34m0.06.430.599[0m [35mW sched_reserve: Flash Attention was auto, set to disabled
+[0m[34m0.15.148.931[0m [32mI [0mdiffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+[34m0.15.150.474[0m [32mI [0mdiffusion_eb: max_steps=48 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on
+[?25l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23A[?2026hdiffusion step: 0/48 [                                                  ] 0%[K
+ <|channel>thought[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Format:  33[K
+[K
+************************* model model model model model model model model model [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 1/48 [=                                                 ] 2%[K
+ <|channel>thought[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: 3 points, concise concise.[K
+[K
+    *      What******* Gemma* model model model model model model model Gemma Ge[K
+    *   *******************************************[K
+[K
+[K
+-        *-                .        *        **                ---------******-*[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 2/48 [==                                                ] 4%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points,..[K
+[K
+    *   *What is DiffusionGemma?*'' a model model by Google Google ( that model [K
+    *   *Key features:*[K
+        *.    ****--*        **-***[K
+[K
+[K
+........      ..  .[K
+............  ..............--.------*******************************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 3/48 [===                                               ] 6%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model by Google Google that combines co[K
+    *   *Key features:*[K
+        1.  It uses a:*-:*:*----- generation                                    [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 4/48 [====                                              ] 8%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model by Google ( ( combines)))) combin[K
+    *   *Key features:*[K
+        1.  It uses a diffusion model ( generation generation generation ( gener[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 5/48 [=====                                             ] 10%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model by Google (specifically associate[K
+    *   *Key features:*[K
+        1.  Comb uses Gemma models- ( ( ( generation) generation- generation    [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 6/48 [======                                            ] 12%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as a backbone backbone ( generation) ( generation gene[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 7/48 [=======                                           ] 14%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as a backbone/ text for for for/).).[K
+[K
+        ..  ItIt a a diffusion- ( generation generation generation-             [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+********** combines combines combines language language with image generation.[K
+        *   Draft: Gemma Gemmaののモデルモデルモデルモデルモデ�[K
+    *   *Point 2:**-********************************************************[K
+[K[?2026l[?2026h[22Adiffusion step: 8/48 [========                                          ] 16%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone ( text understanding text/// generatio[K
+        2.  It uses a diffusion- process to generation generation ( generation  [K
+        3.  ItItIt for control---- generation generation by leveraging the pre-t[K
+[K
+    *   *Point 1: It combines combines ( ( language) with image generation.[K
+        *   Draft: Gemmaの言語言語ををに、、、画像画像拡散生�[K
+    *   *Point 2: High-.*-- control generation                [K
+[K
+        *      ::Draftのののをを、、、、、生成生成生成生成生�[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 9/48 [=========                                         ] 18%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/understanding//[K
+        2.  It uses a diffusion process process for image images (or video).).[K
+        3.  It's for for-- generation- generation generation by leveraging the p[K
+[K
+    *   *Point 1:* It combines language (Gemma) with image generation.[K
+        *   Draft: Gemmaの言語モデルと拡散ベースを、、、、生�[K
+    *   *Point 2:* High-quality generation generation generation generation     [K
+        *   Draft::ののののをを、、、、、画像を画像を画像を�[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 10/48 [==========                                        ] 20%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning// [K
+        2.  It uses a diffusion process for generate generation ( (or or generat[K
+        3.  It's efficient for high--- text generation by leveraging the pre-tra[K
+[K
+    *   *Point 1:* Combining of language (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality image generation based text control.[K
+        *   Draft: テののの理解理解理解、、、、、高品質高品�[K
+    *   *Point 3:* Efficiency/        .[K
+        **   :      の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 11/48 [===========                                       ] 22%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/generation ( te[K
+        2.  It uses a diffusion process for generating generation (or images/ ge[K
+        3.  It' on efficient or high-to- text generation by leveraging the pre-t[K
+[K
+    *   *Point 1:* Combining language model (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality image generation based text text.[K
+        *   Draft: テキストの理解理解能力、、、プロプロトに�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft:  の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 12/48 [============                                      ] 25%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/generation (tex[K
+        2.  It uses a diffusion process for generating images (often images or s[K
+        3.  It's efficient or capable- text- conditioned generation by leveragin[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation generation based on text.[K
+        *   Draft: テキストの能力能力が高いため、、プロンプ�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 13/48 [=============                                     ] 27%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning (t[K
+        2.  It uses a diffusion process for generating images ( images images or[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation generation based text text.[K
+        *   Draft: テキストの理解能力が高いため、プロプロト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 14/48 [==============                                    ] 29%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning ( [K
+        2.  It uses a diffusion process for generating content (usually images o[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation based on text understanding.[K
+        *   Draft: テキストの理解能力が高いため、プロンプト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 15/48 [===============                                   ] 31%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning (t[K
+        2.  It uses a diffusion process for generating content (usually images o[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation based on text prompts.[K
+        *   Draft: テキストの理解能力が高いため、プロンプト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 16/48 [================                                  ] 33%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning (t[K
+        2.  It uses a diffusion process for generating content (usually images o[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation based on text prompts.[K
+        *   Draft: テキストの理解能力が高いため、プロンプト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 17/48 [=================                                 ] 35%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning (t[K
+        2.  It uses a diffusion process for generating content (usually images o[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation based on text prompts.[K
+        *   Draft: テキストの理解能力が高いため、プロンプト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 18/48 [==================                                ] 37%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning (t[K
+        2.  It uses a diffusion process for generating content (usually images o[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation based on text prompts.[K
+        *   Draft: テキストの理解能力が高いため、プロンプト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 19/48 [===================                               ] 39%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning (t[K
+        2.  It uses a diffusion process for generating content (usually images o[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation based on text prompts.[K
+        *   Draft: テキストの理解能力が高いため、プロンプト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 20/48 [====================                              ] 41%[K
+ <|channel>thought[K
+[K
+*   Topic: DiffusionGemma.[K
+*   Language: Japanese.[K
+*   Constraint: Exactly 3 points, concise.[K
+[K
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Ge[K
+    *   *Key features:*[K
+        1.  It uses Gemma as the backbone for text understanding/conditioning (t[K
+        2.  It uses a diffusion process for generating content (usually images o[K
+        3.  It's efficient or capable of high-quality generation by leveraging t[K
+[K
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.[K
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせ�[K
+    *   *Point 2:* High-quality generation based on text prompts.[K
+        *   Draft: テキストの理解能力が高いため、プロンプト�[K
+    *   *Point 3:* Efficiency/Architecture.[K
+        *   Draft: 既存の[K
+[K
+[K
+[K
+[K[?2026l[22A[J[?25h
+<|channel>thought
+
+*   Topic: DiffusionGemma.
+*   Language: Japanese.
+*   Constraint: Exactly 3 points, concise.
+
+    *   *What is DiffusionGemma?* It's a model from Google (likely related to Gemma family) that combines the Gemma language model with a diffusion-based image-generation framework.
+    *   *Key features:*
+        1.  It uses Gemma as the backbone for text understanding/conditioning (text encoder).
+        2.  It uses a diffusion process for generating content (usually images or similar).
+        3.  It's efficient or capable of high-quality generation by leveraging the pre-trained language model.
+
+    *   *Point 1:* Combining language models (Gemma) with diffusion models.
+        *   Draft: Gemmaの言語モデルと拡散モデルを組み合わせており、テキストに基づいた画像生成ができる。
+    *   *Point 2:* High-quality generation based on text prompts.
+        *   Draft: テキストの理解能力が高いため、プロンプトに忠実で高品質な画像を生成できる。
+    *   *Point 3:* Efficiency/Architecture.
+        *   Draft: 既存の
+total time: 9289.70ms, time per step: 442.37ms (21 steps over 1 blocks, entropy-bound)
+throughput: 27.6 tok/s (256 tok in 9289.70ms), in-step parallel 579 tok/s (256-tok canvas x 21.0 steps/block)
+{"ts": "2026-06-11T08:08:40.000433+00:00", "event": "inference_visual_done", "returncode": -9, "elapsed_sec": 24.864, "ansi_bytes": 20429}
+RESULT_DIR=/content/diffusiongemma-colab-cli-public/20260611T080801Z
+RESULT_STATUS=inference_failed
+An exception has occurred, use %tb to see the full traceback.
+[0;31mSystemExit[0m[0;31m:[0m 1
+
+/usr/local/lib/python3.12/dist-packages/IPython/core/interactiveshell.py:3561: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.
+  warn("To exit: use 'exit', 'quit', or Ctrl-D.", stacklevel=1)

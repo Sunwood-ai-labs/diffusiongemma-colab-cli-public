@@ -1,0 +1,22 @@
+{"ts": "2026-06-11T11:19:15.557371+00:00", "event": "start", "session_label": "diffusiongemma-l4-llama-diffusion-sunwood-note", "model_repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "gguf_include": "*Q4_K_M*", "prompt": "日本語で、Sunwood AI LabsがL4上で量子化LLMを検証した実験メモを3点だけ簡潔に書いてください。", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T111915Z", "drive_mounted": false, "capture_mode": "pty_ansi_terminal_visual_diffusion"}
+{"ts": "2026-06-11T11:19:20.316098+00:00", "event": "gpu", "gpu": "NVIDIA L4", "vram": 22.034}
+{"ts": "2026-06-11T11:19:20.316964+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T11:19:26.831061+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 6.513}
+{"ts": "2026-06-11T11:19:26.831842+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T11:19:33.015120+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 6.183}
+{"ts": "2026-06-11T11:19:33.015922+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T11:19:37.218922+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.202}
+{"ts": "2026-06-11T11:19:37.219839+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T11:19:42.303837+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T11:19:42.304563+00:00", "event": "fetch_pr_start"}
+{"ts": "2026-06-11T11:20:29.593459+00:00", "event": "fetch_pr_done", "returncode": 0}
+{"ts": "2026-06-11T11:20:29.594169+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T11:20:29.929293+00:00", "event": "checkout_done", "returncode": 0}
+{"ts": "2026-06-11T11:20:29.929976+00:00", "event": "cmake_config_start"}
+{"ts": "2026-06-11T11:20:41.777415+00:00", "event": "cmake_config_done", "returncode": 0}
+{"ts": "2026-06-11T11:20:41.778173+00:00", "event": "build_start"}
+{"ts": "2026-06-11T11:30:19.286937+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 577.508}
+{"ts": "2026-06-11T11:30:19.288064+00:00", "event": "download_start", "repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-11T11:31:18.594386+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 59.306}
+{"ts": "2026-06-11T11:31:20.709998+00:00", "event": "inference_visual_start", "model": "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "ansi_log": "/content/diffusiongemma-colab-cli-public/20260611T111915Z/visual_terminal_capture.ansi", "llama_log": "/content/diffusiongemma-colab-cli-public/20260611T111915Z/llama_diffusion_visual.log"}
+{"ts": "2026-06-11T11:31:40.567503+00:00", "event": "inference_visual_done", "returncode": 0, "elapsed_sec": 19.856, "ansi_bytes": 16944}

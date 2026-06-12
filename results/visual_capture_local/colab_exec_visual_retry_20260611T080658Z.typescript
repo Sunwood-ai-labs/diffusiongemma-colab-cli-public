@@ -1,0 +1,16 @@
+{"ts": "2026-06-11T08:06:59.560063+00:00", "event": "start", "session_label": "diffusiongemma-l4-gguf-visual", "model_repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "gguf_include": "*Q4_K_M*", "prompt": "日本語で、DiffusionGemmaの特徴を3点だけ簡潔に説明してください。", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T080659Z", "drive_mounted": false, "capture_mode": "pty_ansi_terminal_visual_diffusion"}
+{"ts": "2026-06-11T08:06:59.806001+00:00", "event": "gpu", "gpu": "NVIDIA L4", "vram": 22.034}
+{"ts": "2026-06-11T08:06:59.806821+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T08:07:02.965545+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 3.158}
+{"ts": "2026-06-11T08:07:02.966361+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T08:07:05.591507+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 2.625}
+{"ts": "2026-06-11T08:07:05.592306+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T08:07:08.343328+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 2.75}
+{"ts": "2026-06-11T08:07:08.344181+00:00", "event": "fetch_pr_start"}
+{"ts": "2026-06-11T08:07:08.919131+00:00", "event": "fetch_pr_done", "returncode": 128}
+{"ts": "2026-06-11T08:07:08.919893+00:00", "event": "failed", "error": "RuntimeError('fetch PR 24423 failed')"}
+RESULT_DIR=/content/diffusiongemma-colab-cli-public/20260611T080659Z
+RESULT_STATUS=failed
+An exception has occurred, use %tb to see the full traceback.
+[0;31mSystemExit[0m[0;31m:[0m 1
+

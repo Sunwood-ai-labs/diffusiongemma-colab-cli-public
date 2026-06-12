@@ -1,0 +1,38 @@
+{
+  "cmd": [
+    "/content/llama.cpp/build/bin/llama-completion",
+    "-m",
+    "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf",
+    "-p",
+    "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.",
+    "-n",
+    "8",
+    "--temp",
+    "0.2",
+    "-ngl",
+    "99",
+    "--no-warmup",
+    "--jinja",
+    "-no-cnv"
+  ],
+  "returncode": 0,
+  "elapsed_sec": 12.192,
+  "metrics": {
+    "prompt": [
+      "24",
+      "13.35",
+      "74.91"
+    ],
+    "decode": [
+      "7",
+      "18.86",
+      "53.01"
+    ],
+    "total": [
+      "462.40",
+      "31"
+    ]
+  },
+  "stdout_tail": "Write a concise 3-bullet lab note about a robot barista calibrating espresso shots on a tiny Mars cafe.-fmt- Labeled- Imvent\n\n",
+  "stderr_tail": "0.00.030.898 I llama_completion: llama backend init\n0.00.030.913 I llama_completion: load the model and apply lora adapter, if any\n0.00.030.933 I common_init_result: fitting params to device memory ...\n0.00.030.934 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)\n0.04.685.308 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.04.686.152 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.04.738.287 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list\n0.09.836.682 W llama_context: n_ctx_seq (230912) < n_ctx_train (262144) -- the full capacity of the model will not be utilized\n0.09.989.523 I llama_completion: llama threadpool init, n_threads = 6\n0.09.991.206 I \n0.09.991.379 I system_info: n_threads = 6 (n_threads_batch = 6) / 12 | CUDA : ARCHS = 890 | USE_GRAPHS = 1 | PEER_MAX_BATCH_SIZE = 128 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VNNI = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | \n0.09.991.384 I \n0.09.991.711 I sampler seed: 970881810\n0.09.991.729 I sampler params: \n\trepeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000\n\tdry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = -1\n\ttop_k = 64, top_p = 0.950, min_p = 0.050, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.200\n\tmirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900\n0.09.991.750 I sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist \n0.09.991.759 I generate: n_ctx = 230912, n_batch = 2048, n_predict = 8, n_keep = 0\n0.09.991.760 I \n0.10.451.911 I common_perf_print:    sampling time =       7.29 ms\n0.10.451.914 I common_perf_print:    samplers time =       1.94 ms /    32 tokens\n0.10.451.921 I common_perf_print:        load time =     322.75 ms\n0.10.451.923 I common_perf_print: prompt eval time =     320.41 ms /    24 tokens (   13.35 ms per token,    74.91 tokens per second)\n0.10.451.925 I common_perf_print:        eval time =     132.05 ms /     7 runs   (   18.86 ms per token,    53.01 tokens per second)\n0.10.451.927 I common_perf_print:       total time =     462.40 ms /    31 tokens\n0.10.451.929 I common_perf_print: unaccounted time =       2.66 ms /   0.6 %      (total - sampling - prompt eval - eval) / (total)\n0.10.451.929 I common_perf_print:    graphs reused =          6\n"
+}

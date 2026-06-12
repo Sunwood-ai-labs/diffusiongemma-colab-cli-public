@@ -1,0 +1,29 @@
+{"ts": "2026-06-11T07:54:45.126906+00:00", "event": "start", "session_label": "diffusiongemma-l4-gguf-visual", "model_repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "gguf_include": "*Q4_K_M*", "prompt": "日本語で、DiffusionGemmaの特徴を3点だけ簡潔に説明してください。", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T075445Z", "drive_mounted": false, "capture_mode": "pty_ansi_terminal_visual_diffusion"}
+{"ts": "2026-06-11T07:54:49.877487+00:00", "event": "gpu", "gpu": "NVIDIA L4", "vram": 22.034}
+{"ts": "2026-06-11T07:54:49.878368+00:00", "event": "apt_update_start"}
+{"ts": "2026-06-11T07:54:55.921227+00:00", "event": "apt_update_done", "returncode": 0, "elapsed_sec": 6.042}
+{"ts": "2026-06-11T07:54:55.922044+00:00", "event": "apt_install_start"}
+{"ts": "2026-06-11T07:55:01.755983+00:00", "event": "apt_install_done", "returncode": 0, "elapsed_sec": 5.833}
+{"ts": "2026-06-11T07:55:01.756742+00:00", "event": "pip_install_start"}
+{"ts": "2026-06-11T07:55:06.359563+00:00", "event": "pip_install_done", "returncode": 0, "elapsed_sec": 4.602}
+{"ts": "2026-06-11T07:55:06.360456+00:00", "event": "clone_start"}
+{"ts": "2026-06-11T07:55:10.411374+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-11T07:55:10.412103+00:00", "event": "fetch_pr_start"}
+{"ts": "2026-06-11T07:55:41.290151+00:00", "event": "fetch_pr_done", "returncode": 0}
+{"ts": "2026-06-11T07:55:41.290927+00:00", "event": "checkout_start"}
+{"ts": "2026-06-11T07:55:41.650082+00:00", "event": "checkout_done", "returncode": 0}
+{"ts": "2026-06-11T07:55:41.650822+00:00", "event": "cmake_config_start"}
+{"ts": "2026-06-11T07:55:53.720111+00:00", "event": "cmake_config_done", "returncode": 0}
+{"ts": "2026-06-11T07:55:53.720917+00:00", "event": "build_start"}
+{"ts": "2026-06-11T08:05:19.406041+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 565.684}
+{"ts": "2026-06-11T08:05:19.407242+00:00", "event": "download_start", "repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-11T08:06:25.947773+00:00", "event": "download_done", "returncode": 0, "elapsed_sec": 66.54}
+{"ts": "2026-06-11T08:06:28.110970+00:00", "event": "inference_visual_start", "model": "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "ansi_log": "/content/diffusiongemma-colab-cli-public/20260611T075445Z/visual_terminal_capture.ansi", "llama_log": "/content/diffusiongemma-colab-cli-public/20260611T075445Z/llama_diffusion_visual.log"}
+{"ts": "2026-06-11T08:06:29.387103+00:00", "event": "failed", "error": "AttributeError(\"'OutStream' object has no attribute 'buffer'\")"}
+RESULT_DIR=/content/diffusiongemma-colab-cli-public/20260611T075445Z
+RESULT_STATUS=failed
+An exception has occurred, use %tb to see the full traceback.
+[0;31mSystemExit[0m[0;31m:[0m 1
+
+/usr/local/lib/python3.12/dist-packages/IPython/core/interactiveshell.py:3561: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.
+  warn("To exit: use 'exit', 'quit', or Ctrl-D.", stacklevel=1)

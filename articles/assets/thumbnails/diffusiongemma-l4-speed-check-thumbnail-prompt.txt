@@ -1,0 +1,11 @@
+Create a 1200x630 Japanese note.com article thumbnail using the visible Maki reference character style as the main mascot: a small cream felt cat, red round glasses, holding a red cherry-blossom-like wand, handcrafted felt texture, cute but technical.
+
+Article theme: DiffusionGemma speed is not the same as normal autoregressive Gemma 4 token decoding; this article tests a Colab L4 GGUF llama-diffusion-cli route and carefully says the official 4x / H100-class speed was not reproduced.
+
+Visual concept: A warm editorial tech thumbnail. Maki stands at the lower right as a technical guide, pointing the red wand at two contrasting felt-like workflow lanes: left lane shows a normal autoregressive token stream as small sequential blocks labeled conceptually, right lane shows a 256-token diffusion canvas as a grid being refined in parallel. In the center, a small benchmark gauge compares "56.3 tok/s" and "53.01 tok/s" without implying a strict same-metric win. Add a subtle Colab L4 GPU card silhouette and a tiny terminal strip reading "llama-diffusion-cli". No real brand logos.
+
+Layout and text: bold readable Japanese title text baked into the image, large and mobile-readable: 「DiffusionGemma 速いのか？」. Smaller subtitle: 「Colab L4で実測比較」. Optional small bottom banner: 「GGUF / llama-diffusion-cli / Gemma 4」. Keep text clean, accurate, and not too dense.
+
+Style: premium editorial thumbnail, clean Japanese tech magazine cover meets warm felt craft illustration. Strong hierarchy, generous negative space, high contrast, polished lighting, no clutter. Palette based on Maki: warm cream #FFF6D6, deep teal #173539, vivid red #FF1E56, charcoal #333333. Aspect ratio 1200x630, OGP/social preview friendly.
+
+Avoid: photorealistic human, real brand logos, Google logo, Colab logo, messy code walls, too many panels, unreadable tiny Japanese text, watermark, credentials, private IPs, API keys, implying the official 4x speed was reproduced, implying strict same-metric superiority.

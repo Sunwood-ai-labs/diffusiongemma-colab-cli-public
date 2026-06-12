@@ -1,0 +1,540 @@
+{"ts": "2026-06-11T11:33:36.266624+00:00", "event": "start", "session_label": "diffusiongemma-l4-llama-diffusion-sunwood-note", "model_repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "gguf_include": "*Q4_K_M*", "model_path": "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "prompt": "日本語で、Sunwood AI LabsがL4上で量子化LLMを検証した実験メモを3点だけ簡潔に書いてください。", "output_dir": "/content/diffusiongemma-colab-cli-public/20260611T113336Z", "runner": "llama-diffusion-cli", "capture_mode": "pty_ansi_terminal_visual_diffusion", "inference_cmd": ["/content/llama.cpp/build/bin/llama-diffusion-cli", "-m", "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "-p", "日本語で、Sunwood AI LabsがL4上で量子化LLMを検証した実験メモを3点だけ簡潔に書いてください。", "-n", "96", "--temp", "0.2", "--diffusion-visual", "--diffusion-visual-progress", "--diffusion-visual-interval", "1", "--log-file", "/content/diffusiongemma-colab-cli-public/20260611T113336Z/llama_diffusion_visual.log"]}
+{"ts": "2026-06-11T11:33:36.267341+00:00", "event": "inference_visual_start", "ansi_log": "/content/diffusiongemma-colab-cli-public/20260611T113336Z/visual_terminal_capture.ansi", "llama_log": "/content/diffusiongemma-colab-cli-public/20260611T113336Z/llama_diffusion_visual.log"}
+[34m0.01.255.896[0m [35mW load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.256.806[0m [35mW load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.314.373[0m [35mW load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[0m[34m0.06.355.112[0m [32mI [0mdiffusion: -n 96 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+[34m0.06.355.121[0m [32mI [0mdiffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+[34m0.06.355.959[0m [35mW llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+[0m[34m0.06.365.792[0m [35mW sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+[0m[34m0.06.365.800[0m [35mW sched_reserve: Flash Attention was auto, set to disabled
+[0m[34m0.14.245.304[0m [32mI [0mdiffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+[34m0.14.246.899[0m [32mI [0mdiffusion_eb: max_steps=48 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on sample_reduce=on
+[?25l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23A[?2026hdiffusion step: 0/48 [                                                  ] 0%[K
+ <|channel>thought[K
+*wood AI.[K
+[K
+ Labs.[K
+*    on: on on on on on44[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 1/48 [=                                                 ] 2%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of of quantized quantized LLMsMs on on44 (likely4[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+********************************************************************************[K
+[K[?2026l[?2026h[22Adiffusion step: 2/48 [==                                                ] 4%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 ( (likely 4[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+.[K
+[K
+.*******************************************************************************[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 3/48 [===                                               ] 6%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to4 44 or[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+********************************************************************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 4/48 [====                                              ] 8%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to L44bit or a a a,,,,,,[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+********************************************************************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 5/48 [=====                                             ] 10%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+33[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+********************************************************************************[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 6/48 [======                                            ] 12%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 points points points.[K
+Japanese.[K
+[K
+emmaemma********:*:*:***********************************************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 7/48 [=======                                           ] 14%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed****:*********** " " " " " " " quantized " "******************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 8/48 [========                                          ] 16%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google).[K
+[K
+    *   *   :*:*:*:* " " " " """" " " " " " " " " "*****************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 9/48 [=========                                         ] 18%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google).[K
+[K
+).[K
+[K
+    *   *:*:*:* " " " " Labs"""" " " " " " " on " L**********:*:* knowledge cuto[K
+[K
+    ****:* " "woodwood AI Labs" not a not globally well-known global entity like[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 10/48 [==========                                        ] 20%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:*:* " " " " """"" " " " " on " L4 L[K
+[K
+*******:*:*:* cutoff cutoff cutoff cutoff  2225.[K
+    ****:*:* "Sunwood AI Labs" is not a globally well-known entity like like Ope[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 11/48 [===========                                       ] 22%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    **** Check:*:*:* internal internal cutoff cutoff cutoff to  2055[K
+[K
+    *   *Verification:* "Sunwood AI Labs" is not a globally well-known AI like l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 12/48 [============                                      ] 25%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented notes regarding[K
+    *   *Knowledge Check:* I internal internal data a knowledge cutoff to Januar[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+***********:*.[K
+    *   *Verification:*:* " " " " " " " Labs""" " " "***************************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 13/48 [=============                                     ] 27%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" exist and documented experiments regardi[K
+    *   *Knowledge Check:* Searching internal internal data (knowledge cutoff to[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+ data.[K
+    *   *Verification:* I do not have specific specific experimental " "Sun " ""[K
+************** I I I I not hallucinate or I** I I I* the information'' a specifi[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 14/48 [==============                                    ] 29%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching internal knowledge data (knowledge to to Ja[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" rega[K
+[K
+    *   * I not information** I I, I must not hallucinate or invent    *      * [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 15/48 [===============                                   ] 31%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching internal knowledge base (up to to Jan 2025)[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" veri[K
+[K
+    *   Since I don not information have specific I, I should not hallucinate or[K
+    *    the the is not not' not well-documented, I should state that I I't info[K
+***************[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 16/48 [================                                  ] 33%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching internal knowledge base (up to to Jan 2025)[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" test[K
+[K
+    *   Since I don nott have specific information, I should not hallucinate or [K
+    *   If the information is not available or well-documented, I should state t[K
+    *   *,,   ********[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 17/48 [=================                                 ] 35%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching my knowledge base (up to to  2025).[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" test[K
+[K
+    *   Since I do not have have specific information, I must not hallucinate or[K
+    *   If the information is not available or well-documented, I should state t[K
+    *   However, if the user is asking for a specific a a[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 18/48 [==================                                ] 37%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching my internal base (up to to 2025 cutoff).[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" test[K
+[K
+    *   Since I do not have the specific information, I must not hallucinate or [K
+    *   If the information is not available or well-documented, I should state t[K
+    *   However, if the user is asking for * specific**[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 19/48 [===================                               ] 39%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching my knowledge base (up to January 2025 cutof[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" test[K
+[K
+    *   Since I do not have this specific information, I must not hallucinate or[K
+    *   If the information is not available or well-documented, I should state t[K
+    *   However, if the user is asking for * ***[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 20/48 [====================                              ] 41%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching my knowledge base (up to January 2025 cutof[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" test[K
+[K
+    *   Since I do not have this specific information, I must not hallucinate or[K
+    *   If the information is not available or well-documented, I should state t[K
+    *   However, if the user is asking for *experimental notes*[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[?2026h[22Adiffusion step: 21/48 [=====================                             ] 43%[K
+ <|channel>thought[K
+Sunwood AI Labs.[K
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).[K
+3 concise experimental notes.[K
+Japanese.[K
+Gemma 4 (developed by Google DeepMind).[K
+[K
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments reg[K
+    *   *Knowledge Check:* Searching my knowledge base (up to January 2025 cutof[K
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity li[K
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" test[K
+[K
+    *   Since I do not have this specific information, I must not hallucinate or[K
+    *   If the information is not available or well-documented, I should state t[K
+    *   However, if the user is asking for *experimental notes*[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?2026l[22A[J[?25h
+<|channel>thought
+Sunwood AI Labs.
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).
+3 concise experimental notes.
+Japanese.
+Gemma 4 (developed by Google DeepMind).
+
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments regarding quantized LLMs on L4 GPUs?
+    *   *Knowledge Check:* Searching my knowledge base (up to January 2025 cutoff).
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity like OpenAI, Google, or Meta. It might be a niche startup, a specific research group, or a fictional/hypothetical entity provided by the user or a very obscure one.
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" testing quantized LLMs on L4 GPUs in my training data.
+
+    *   Since I do not have this specific information, I must not hallucinate or fabricate facts.
+    *   If the information is not available or well-documented, I should state that I don't have enough information.
+    *   However, if the user is asking for *experimental notes*
+total time: 4630.42ms, time per step: 210.47ms (22 steps over 1 blocks, entropy-bound)
+throughput: 55.3 tok/s (256 tok in 4630.42ms), in-step parallel 1216 tok/s (256-tok canvas x 22.0 steps/block)
+{"ts": "2026-06-11T11:33:55.715628+00:00", "event": "inference_visual_done", "returncode": 0, "elapsed_sec": 19.447, "ansi_bytes": 16944}
+RESULT_DIR=/content/diffusiongemma-colab-cli-public/20260611T113336Z
+RESULT_STATUS=generated_visual_capture

@@ -1,0 +1,30 @@
+[34m0.01.265.058[0m [35mW load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.265.996[0m [35mW load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.324.174[0m [35mW load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[0m[34m0.06.359.614[0m [32mI [0mdiffusion: -n 96 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+[34m0.06.359.625[0m [32mI [0mdiffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+[34m0.06.360.425[0m [35mW llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+[0m[34m0.06.370.398[0m [35mW sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+[0m[34m0.06.370.407[0m [35mW sched_reserve: Flash Attention was auto, set to disabled
+[0m[34m0.14.255.906[0m [32mI [0mdiffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+[34m0.14.257.534[0m [32mI [0mdiffusion_eb: max_steps=48 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on sample_reduce=on
+
+<|channel>thought
+*   Topic: Robot barista calibrating espresso shots.
+    *   Setting: Tiny Mars cafe.
+    *   Format: Concise 3-bullet lab note.
+    *   Constraint: Concise.
+
+    *   Bullet 1: The problem/environmental factor (gravity, atmospheric pressure on Mars).
+    *   Bullet 2: The action/adjustment (grind size, pressure, temperature).
+    *   Bullet 3: The result/status (quality of the shot, readiness for service).
+
+    *   *Bullet 1:* Adjusted pump pressure for Mars' 0.38g gravity to ensure proper extraction.
+    *   *Bullet 2:* Recalibrated grinder settings and water temp to compensate for the low-pressure atmospheric environment.
+    *   *Bullet 3:* Achieved a consistent 25-second extraction time; shots are ready for the morning shift.
+
+    *   *Bullet 1:* Calibrated pump pressure to account for 0.38g Martian gravity to maintain crema density.
+    *   *Bullet 2:* Fine-tuned grind microns and brew temperature to offset for low atmospheric pressure.
+    *   *Bullet 3:* Successfully
+total time: 4551.07ms, time per step: 216.72ms (21 steps over 1 blocks, entropy-bound)
+throughput: 56.3 tok/s (256 tok in 4551.07ms), in-step parallel 1181 tok/s (256-tok canvas x 21.0 steps/block)

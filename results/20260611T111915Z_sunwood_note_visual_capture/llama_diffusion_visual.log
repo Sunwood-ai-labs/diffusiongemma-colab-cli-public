@@ -1,0 +1,28 @@
+[34m0.01.263.489[0m [35mW load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.264.425[0m [35mW load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.322.482[0m [35mW load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+[0m[34m0.06.981.014[0m [32mI [0mdiffusion: -n 96 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+[34m0.06.981.023[0m [32mI [0mdiffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+[34m0.06.981.876[0m [35mW llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+[0m[34m0.06.992.043[0m [35mW sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+[0m[34m0.06.992.053[0m [35mW sched_reserve: Flash Attention was auto, set to disabled
+[0m[34m0.14.515.219[0m [32mI [0mdiffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+[34m0.14.516.686[0m [32mI [0mdiffusion_eb: max_steps=48 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on sample_reduce=on
+
+<|channel>thought
+Sunwood AI Labs.
+Verification of quantized LLMs on L4 (likely referring to the NVIDIA L4 GPU).
+3 concise experimental notes.
+Japanese.
+Gemma 4 (developed by Google DeepMind).
+
+    *   *Query:* Does "Sunwood AI Labs" have specific documented experiments regarding quantized LLMs on L4 GPUs?
+    *   *Knowledge Check:* Searching my knowledge base (up to January 2025 cutoff).
+    *   *Result:* "Sunwood AI Labs" is not a globally well-known major entity like OpenAI, Google, or Meta. It might be a niche startup, a specific research group, or a fictional/hypothetical entity provided by the user or a very obscure one.
+    *   *Verification:* I do not have specific records of "Sunwood AI Labs" testing quantized LLMs on L4 GPUs in my training data.
+
+    *   Since I do not have this specific information, I must not hallucinate or fabricate facts.
+    *   If the information is not available or well-documented, I should state that I don't have enough information.
+    *   However, if the user is asking for *experimental notes*
+total time: 4754.52ms, time per step: 216.11ms (22 steps over 1 blocks, entropy-bound)
+throughput: 53.8 tok/s (256 tok in 4754.52ms), in-step parallel 1185 tok/s (256-tok canvas x 22.0 steps/block)
