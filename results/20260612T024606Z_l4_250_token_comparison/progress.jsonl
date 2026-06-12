@@ -1,0 +1,18 @@
+{"ts": "2026-06-12T02:46:06.672078+00:00", "event": "start", "prompt": "Write a detailed technical lab note of at least 280 English words about a robot barista calibrating espresso shots in a tiny Mars cafe. Include sections for environment, calibration procedure, observations, failure modes, and conclusion. Keep the answer continuous and do not stop early.", "n_predict": 320, "output_dir": "/content/diffusiongemma-colab-cli-public/20260612T024606Z_l4_250_token_comparison", "route": "active-colab-cli-l4-session", "comparison_note": "Both commands request 320 generated tokens. DiffusionGemma canvas throughput and regular Gemma 4 autoregressive decode tok/s are still not identical metrics."}
+{"ts": "2026-06-12T02:46:06.699403+00:00", "event": "gpu", "output": "NVIDIA L4, 23034 MiB, 0 MiB"}
+{"ts": "2026-06-12T02:46:06.700196+00:00", "event": "pip_install_hf_start"}
+{"ts": "2026-06-12T02:46:11.545806+00:00", "event": "pip_install_hf_done", "returncode": 0, "elapsed_sec": 4.845}
+{"ts": "2026-06-12T02:46:11.546780+00:00", "event": "clone_start"}
+{"ts": "2026-06-12T02:46:15.711249+00:00", "event": "clone_done", "returncode": 0}
+{"ts": "2026-06-12T02:46:15.711953+00:00", "event": "checkout_start"}
+{"ts": "2026-06-12T02:46:47.038144+00:00", "event": "checkout_done", "fetch_returncode": 0, "checkout_returncode": 0, "git_head": "10a2613aa0b2686f7d0608520c4f0ea05219df03\n10a2613aa diffusion: stop per-step device-sample fallback spam"}
+{"ts": "2026-06-12T02:46:47.038918+00:00", "event": "build_start"}
+{"ts": "2026-06-12T02:56:40.526050+00:00", "event": "build_done", "returncode": 0, "elapsed_sec": 581.233}
+{"ts": "2026-06-12T02:56:40.527529+00:00", "event": "diffusiongemma_download_start", "repo": "unsloth/diffusiongemma-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-12T02:57:42.898743+00:00", "event": "diffusiongemma_download_done", "returncode": 0, "elapsed_sec": 62.371}
+{"ts": "2026-06-12T02:57:42.900127+00:00", "event": "gemma4_download_start", "repo": "ggml-org/gemma-4-26B-A4B-it-GGUF", "include": "*Q4_K_M*"}
+{"ts": "2026-06-12T02:59:07.249068+00:00", "event": "gemma4_download_done", "returncode": 0, "elapsed_sec": 84.348}
+{"ts": "2026-06-12T02:59:07.253729+00:00", "event": "diffusiongemma_inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-diffusion-cli", "-m", "/content/models/unsloth__diffusiongemma-26B-A4B-it-GGUF/diffusiongemma-26B-A4B-it-Q4_K_M.gguf", "-p", "Write a detailed technical lab note of at least 280 English words about a robot barista calibrating espresso shots in a tiny Mars cafe. Include sections for environment, calibration procedure, observations, failure modes, and conclusion. Keep the answer continuous and do not stop early.", "-n", "320", "--temp", "0.2"]}
+{"ts": "2026-06-12T03:00:22.788479+00:00", "event": "diffusiongemma_inference_done", "returncode": 0, "elapsed_sec": 75.534, "error": null}
+{"ts": "2026-06-12T03:00:22.791079+00:00", "event": "gemma4_inference_start", "cmd": ["/content/llama.cpp/build/bin/llama-completion", "-m", "/content/models/ggml-org__gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-Q4_K_M.gguf", "-p", "Write a detailed technical lab note of at least 280 English words about a robot barista calibrating espresso shots in a tiny Mars cafe. Include sections for environment, calibration procedure, observations, failure modes, and conclusion. Keep the answer continuous and do not stop early.", "-n", "320", "--temp", "0.2", "-ngl", "99", "--no-warmup", "--jinja", "-no-cnv"]}
+{"ts": "2026-06-12T03:01:29.935852+00:00", "event": "gemma4_inference_done", "returncode": 0, "elapsed_sec": 67.144, "error": null}

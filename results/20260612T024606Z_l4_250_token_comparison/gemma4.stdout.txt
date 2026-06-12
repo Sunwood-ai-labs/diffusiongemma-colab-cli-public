@@ -1,0 +1,5 @@
+Write a detailed technical lab note of at least 280 English words about a robot barista calibrating espresso shots in a tiny Mars cafe. Include sections for environment, calibration procedure, observations, failure modes, and conclusion. Keep the answer continuous and do not stop early.。
+<|channel> ability to think: 100%
+*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   Immersive, technical, detailed, scientific.
+*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *
+
