@@ -1,0 +1,24 @@
+
+<|channel>thought
+
+*   Subject: Mars cafe robot barista.
+*   Task: Calibrating espresso pressure, grind size, and crema quality.
+*   Condition: 0.38g gravity (Mars).
+*   Format: Compact, vivid technical field note.
+*   Constraint: Under 190 words.
+*   Vibe Immediately Immediately useful.
+
+    *   *Gravity (0.38g):* Affects fluid dynamics, pressure resistance, and the way of the the puck.
+    *   *Pressure:* Needs to be adjusted for lower lower- resistance.
+    *   *Grind size:* Likely needs to be to maintain resistance because extraction flows slower in
+ gravity.
+    *   *Crema:* Surface tension stability bubbles and affected.
+    *   *RobotRobot:*:*:*,,,,,,--..
+
+
+
+****:*:*:*:*:* Unit ID: Mars--...
+total time: 2131.66ms, time per step: 266.46ms (8 steps over 1 blocks, entropy-bound)
+throughput: 120.1 tok/s (256 tok in 2131.66ms), in-step parallel 961 tok/s (256-tok canvas x 8.0 steps/block)
+
+> 

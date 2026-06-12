@@ -1,0 +1,20 @@
+0.01.459.631 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.460.539 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.515.033 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+0.53.512.940 I diffusion: -n 256 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+0.53.512.958 I diffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+0.53.516.443 W llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.53.526.617 W sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+0.53.526.626 W sched_reserve: Flash Attention was auto, set to disabled
+0.58.350.506 I diffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+0.58.352.141 I diffusion_eb: max_steps=8 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on sample_reduce=on
+0.58.352.147 I conversation mode: /help for commands, /clear to reset, /exit to quit
+0.59.156.786 I 
+diffusion step: 0/8 [                                                  ] 0%0.59.336.869 I 
+diffusion step: 1/8 [======                                            ] 12%0.59.523.311 I 
+diffusion step: 2/8 [============                                      ] 25%0.59.713.726 I 
+diffusion step: 3/8 [==================                                ] 37%0.59.907.537 I 
+diffusion step: 4/8 [=========================                         ] 50%1.00.102.303 I 
+diffusion step: 5/8 [===============================                   ] 62%1.00.296.877 I 
+diffusion step: 6/8 [=====================================             ] 75%1.00.491.189 I 
+diffusion step: 7/8 [===========================================       ] 87%

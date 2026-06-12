@@ -1,0 +1,45 @@
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9600-10a2613aa
+model      : gemma-4-26B-A4B-it-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> In one compact but vivid technical field note, describe a Mars cafe robot barista calibrating espresso pressure, grind size, and crema quality under 0.38g gravity. Keep it under 190 words and make it feel immediately useful.
+
+|-\ [Start thinking]
+*   Subject: Mars cafe robot barista calibrating espresso.
+    *   Key elements: Espresso pressure, grind size, crema quality, 0.38g gravity.
+    *   Format: Compact but vivid technical field note.
+    *   Constraint 1: Under 190 words.
+    *   Constraint 2: Feel "immediately useful" (implies a sense of urgency, precision, or operational log style).
+
+    *   Setting: Mars (low gravity, dust, pressurized environment).
+    *   Character/Entity: Robot barista (automated, sensor-driven).
+    *   Technical terms: PSI, micron, viscosity, extraction, flow rate, 0.38g.
+    *   Tone: Professional, observational, technical, slightly gritty.
+
+    *   *Draft 1 (Mental Outline):* Log entry 402. Unit B-7 is adjusting for low gravity. The coffee grounds are behaving differently because of 0.38g. I'm checking the grind size. The pressure needs to be 9 bars. The crema is looking thin. Adjusting the burrs.
+
+    *   *Draft 2 (Adding "Vivid" and
+
+[ Prompt: 267.9 t/s | Generation: 69.1 t/s ]
+
+Exiting...

@@ -1,0 +1,30 @@
+0.01.269.689 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.270.615 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.323.719 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+0.06.426.856 I diffusion: -n 256 -> 1 blocks, n_ubatch=2304 n_batch=2304 n_ctx=2304 (canvas_length=256)
+0.06.426.867 I diffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+0.06.427.609 W llama_context: n_ctx_seq (2304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.06.437.173 W sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+0.06.437.184 W sched_reserve: Flash Attention was auto, set to disabled
+0.12.801.583 I diffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+0.12.803.042 I diffusion_eb: max_steps=24 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on sample_reduce=on
+0.12.803.048 I conversation mode: /help for commands, /clear to reset, /exit to quit
+0.13.449.688 I 
+diffusion step: 0/24 [                                                  ] 0%0.13.631.696 I 
+diffusion step: 1/24 [==                                                ] 4%0.13.820.354 I 
+diffusion step: 2/24 [====                                              ] 8%0.14.012.345 I 
+diffusion step: 3/24 [======                                            ] 12%0.14.206.859 I 
+diffusion step: 4/24 [========                                          ] 16%0.14.404.079 I 
+diffusion step: 5/24 [==========                                        ] 20%0.14.600.467 I 
+diffusion step: 6/24 [============                                      ] 25%0.14.797.416 I 
+diffusion step: 7/24 [==============                                    ] 29%0.14.994.009 I 
+diffusion step: 8/24 [================                                  ] 33%0.15.192.024 I 
+diffusion step: 9/24 [==================                                ] 37%0.15.394.291 I 
+diffusion step: 10/24 [====================                              ] 41%0.15.595.877 I 
+diffusion step: 11/24 [======================                            ] 45%0.15.798.815 I 
+diffusion step: 12/24 [=========================                         ] 50%0.16.000.166 I 
+diffusion step: 13/24 [===========================                       ] 54%0.16.201.338 I 
+diffusion step: 14/24 [=============================                     ] 58%0.16.399.367 I 
+diffusion step: 15/24 [===============================                   ] 62%0.16.607.698 I 
+diffusion step: 16/24 [=================================                 ] 66%0.16.811.393 I 
+diffusion step: 17/24 [===================================               ] 70%

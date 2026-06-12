@@ -1,0 +1,23 @@
+
+<|channel>thought
+
+*   Subject: Mars cafe robot barista.
+*   Task: Calibrating espresso pressure, grind size, and crema quality.
+*   Condition: 0.38g gravity (Mars).
+*   Format: Compact, vivid technical field note.
+*   Constraint: Under 190 words.
+*   Tone: Immediately useful/technical.
+
+    *   Gravity (0.38g): Affects flow rate and extraction dynamics. Pressure is harder to maintain in the same way without Earth.
+    *   Grind size: Needs to be finer or coarser? Usually, if gravity is lower, flow might might be faster, so a might grind might be needed to maintain resistance.
+    *   Pressure: Pump-based pressure needs de--ibrated to hit 9 bars.
+    *   Crema: Visual indicator of emulsion and gas release.
+
+    *   *Setting:* Marsisis-7. Mars..
+****:*:*ibribribr-----   .
+    *   *Technical terms:* Bar,,,,,,-,-gcosity, microns.
+    *   *Drafting:* Field        Field ::
+total time: 2776.02ms, time per step: 231.34ms (12 steps over 1 blocks, entropy-bound)
+throughput: 92.2 tok/s (256 tok in 2776.02ms), in-step parallel 1107 tok/s (256-tok canvas x 12.0 steps/block)
+
+> 
