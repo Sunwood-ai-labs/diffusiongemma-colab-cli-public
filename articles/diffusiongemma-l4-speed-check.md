@@ -183,8 +183,7 @@ python3 scripts/run_diffusiongemma_gguf_visual_capture.py
 3. /content/llama.cpp/build/bin/llama-diffusion-cli が存在する
 4. Q4_K_M GGUFが /content/models/... に保存されている
 5. llama-diffusion-cli のreturn codeが0になる
-6. 通常のGGUF smoke testでは generation_stdout.txt と generation_stderr.txt が残る
-7. --diffusion-visual 実行では visual_terminal_capture.ansi、generation_terminal_tail.txt、llama_diffusion_visual.log が残る
+6. 通常のGGUF smoke testと --diffusion-visual 実行の結果が保存される
 ```
 
 GGUF系スクリプトの標準出力先は、Colab runtime内の `/content/diffusiongemma-colab-cli-public/<timestamp>/` です。Drive保存前提のfull Transformers probeとは出力先が違うため、結果確認時はここを混同しないようにします。
@@ -238,27 +237,11 @@ Return code: 0
 
 注意点として、`Command elapsed` にはmodel loadなども含まれます。一方、`Decode eval` はllama.cppの推論timingです。速度比較に使うなら、まずdecode evalを見ます。
 
-証跡:
+## 比較に使ったDiffusionGemmaのL4実測
 
-metadata.json
+ここで比較したDiffusionGemma側の数字は、同じColab L4環境で先に取っていた実測です。通常Gemma4 baselineを取り直したあと、その値と並べて見られるように整理しました。
 
-https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/metadata.json
-
-stdout.txt
-
-https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/stdout.txt
-
-stderr.txt
-
-https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/stderr.txt
-
-run_report.md
-
-https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/run_report.md
-
-## DiffusionGemma側の既存L4結果
-
-同じリポジトリ内には、DiffusionGemmaを `llama-diffusion-cli` で動かした既存のL4結果があります。
+実行条件は、UnslothのDiffusionGemma 26B A4B GGUF Q4_K_Mを、llama.cpp開発PRからビルドした `llama-diffusion-cli` で動かす構成です。
 
 この実験の公開ポストはこちらです。
 
@@ -328,7 +311,7 @@ Googleが「速い」と言っているのは、主に低バッチ・単一GPU�
 
 - Colab L4上で通常Gemma4の正しい非会話baselineを取れた
 - `llama-cli` ではなく `llama-completion --jinja -no-cnv` が必要だと確認した
-- DiffusionGemmaの既存L4結果と、通常Gemma4 baselineを同じ記事内で比較できる形に整理した
+- 同じColab L4で先に取っていたDiffusionGemma実測と、通常Gemma4 baselineを同じ記事内で比較できる形に整理した
 - 今回のL4結果では、DiffusionGemmaが通常Gemma4より遅いとは言えない
 
 検証できていないこと:
