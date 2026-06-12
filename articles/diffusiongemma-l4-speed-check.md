@@ -1,14 +1,6 @@
 ---
 title: "DiffusionGemmaは本当に速いのか？Colab L4で通常Gemma4と比較してわかったこと"
-emoji: "🧪"
-type: tech
-topics:
-  - gemma
-  - diffusiongemma
-  - colab
-  - llamacpp
-  - benchmark
-published: false
+tags: ["DiffusionGemma", "Gemma4", "GoogleColab", "GoogleColabCLI", "llamacpp", "機械学習", "生成AI", "ベンチマーク"]
 ---
 
 ## 結論
@@ -46,9 +38,17 @@ GoogleのDeveloper Guideでは、DiffusionGemmaはGPU上で最大4倍高速、H1
 
 参考:
 
-- https://developers.googleblog.com/diffusiongemma-the-developer-guide/
-- https://ai.google.dev/gemma/docs/diffusiongemma
-- https://ai.google.dev/gemma/docs/diffusiongemma/model_card
+DiffusionGemma Developer Guide
+
+https://developers.googleblog.com/diffusiongemma-the-developer-guide/
+
+DiffusionGemma model overview
+
+https://ai.google.dev/gemma/docs/diffusiongemma
+
+DiffusionGemma model card
+
+https://ai.google.dev/gemma/docs/diffusiongemma/model_card
 
 ## 実験環境
 
@@ -60,8 +60,9 @@ GoogleのDeveloper Guideでは、DiffusionGemmaはGPU上で最大4倍高速、H1
 
 前提となる記事:
 
-- Codexモバイル×Google Colab CLIで長時間実行の突破口が見えた  
-  https://note.com/sunwood_ai_labs/n/n4d8214153375
+Codexモバイル×Google Colab CLIで長時間実行の突破口が見えた
+
+https://note.com/sunwood_ai_labs/n/n4d8214153375
 
 今回のDiffusionGemma実験でも、この考え方を使っています。つまり、runtime保持の主体はColabブラウザUIに置き、CLIは環境構築・実行・結果回収の操作面として使います。
 
@@ -239,10 +240,21 @@ Return code: 0
 
 証跡:
 
-- `results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/metadata.json`
-- `results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/stdout.txt`
-- `results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/stderr.txt`
-- `results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/run_report.md`
+metadata.json
+
+https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/metadata.json
+
+stdout.txt
+
+https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/stdout.txt
+
+stderr.txt
+
+https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/stderr.txt
+
+run_report.md
+
+https://github.com/Sunwood-ai-labs/diffusiongemma-colab-cli-public/blob/main/results/20260612T0208Z_browser_owned_l4_gemma4_completion_jinja_n8/run_report.md
 
 ## DiffusionGemma側の既存L4結果
 
@@ -382,3 +394,5 @@ https://x.com/haru_maki_ch/status/2064990568846127528?s=46
 Google Colab CLI
 
 https://github.com/googlecolab/google-colab-cli
+
+#DiffusionGemma #Gemma4 #GoogleColab #GoogleColabCLI #llamacpp #機械学習 #生成AI #ベンチマーク
