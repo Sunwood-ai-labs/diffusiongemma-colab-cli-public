@@ -1,7 +1,8 @@
 # DiffusionGemma upstream monitoring
 
-This repository checks the upstream llama.cpp DiffusionGemma PR discussion twice
-per day and stores snapshots under `monitoring/upstream/`.
+This repository includes the helper script used by the Codex Automation that
+checks the upstream llama.cpp DiffusionGemma PR discussion twice per day and
+stores snapshots under `monitoring/upstream/`.
 
 ## Targets
 
@@ -23,27 +24,21 @@ Outputs:
 - `monitoring/upstream/<UTC timestamp>/summary.md`
 - `monitoring/upstream/latest.md`
 
-## Local automation
+## Codex Automation
 
-Install or refresh the macOS launchd job:
+Live Codex Automation entrypoint:
 
-```bash
-bash scripts/install_upstream_monitor_launchd.sh
-```
+- `/Users/admin/.codex/automations/diffusiongemma-upstream-speed-monitor/automation.toml`
 
 Schedule:
 
 - 09:15 JST
 - 21:15 JST
 
-LaunchAgent:
+The automation runs Codex against this repository, calls the helper script, and
+then appends a concise local note under `monitoring/upstream/codex-runs/`.
 
-- `~/Library/LaunchAgents/com.sunwood.diffusiongemma.upstream-monitor.plist`
-
-Logs:
-
-- `monitoring/upstream/launchd.stdout.log`
-- `monitoring/upstream/launchd.stderr.log`
+This is intentionally a Codex Automation, not a macOS `launchd` or cron job.
 
 ## Scope
 
