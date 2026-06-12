@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.sunwood.diffusiongemma.upstream-monitor</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>cd /Users/admin/Prj/diffusiongemma-colab-cli-public &amp;&amp; /usr/bin/python3 scripts/monitor_diffusiongemma_upstream.py</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key>
+      <integer>9</integer>
+      <key>Minute</key>
+      <integer>15</integer>
+    </dict>
+    <dict>
+      <key>Hour</key>
+      <integer>21</integer>
+      <key>Minute</key>
+      <integer>15</integer>
+    </dict>
+  </array>
+  <key>StandardOutPath</key>
+  <string>/Users/admin/Prj/diffusiongemma-colab-cli-public/monitoring/upstream/launchd.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/admin/Prj/diffusiongemma-colab-cli-public/monitoring/upstream/launchd.stderr.log</string>
+  <key>WorkingDirectory</key>
+  <string>/Users/admin/Prj/diffusiongemma-colab-cli-public</string>
+</dict>
+</plist>
