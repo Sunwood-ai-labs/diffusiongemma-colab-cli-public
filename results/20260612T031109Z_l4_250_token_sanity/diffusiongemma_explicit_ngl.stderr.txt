@@ -1,0 +1,52 @@
+0.01.759.052 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.759.992 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.819.876 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+0.57.675.946 I diffusion: -n 320 -> 2 blocks, n_ubatch=2560 n_batch=2560 n_ctx=2560 (canvas_length=256)
+0.57.675.962 I diffusion: --fit has no effect here; context is sized from -n and the canvas. Set -ngl / --n-cpu-moe to control device memory.
+0.57.679.886 W llama_context: n_ctx_seq (2560) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.57.692.770 W sched_reserve: layer 5 is assigned to device CUDA0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+0.57.692.781 W sched_reserve: Flash Attention was auto, set to disabled
+1.02.866.935 I diffusion_params: steps=128 schedule=0 algorithm=4 temperature=0.200 eps=0.001000 mask_token=4
+1.02.868.589 I diffusion_eb: max_steps=48 t=[0.400,0.800] entropy_bound=0.1000 stability=1 confidence=0.0050 kv_cache=on gpu_sampling=on sample_reduce=on
+1.03.745.916 I 
+diffusion step: 0/48 [                                                  ] 0%1.03.920.427 I 
+diffusion step: 1/48 [=                                                 ] 2%1.04.103.119 I 
+diffusion step: 2/48 [==                                                ] 4%1.04.292.733 I 
+diffusion step: 3/48 [===                                               ] 6%1.04.483.324 I 
+diffusion step: 4/48 [====                                              ] 8%1.04.675.452 I 
+diffusion step: 5/48 [=====                                             ] 10%1.04.869.991 I 
+diffusion step: 6/48 [======                                            ] 12%1.05.065.889 I 
+diffusion step: 7/48 [=======                                           ] 14%1.05.263.266 I 
+diffusion step: 8/48 [========                                          ] 16%1.05.461.179 I 
+diffusion step: 9/48 [=========                                         ] 18%1.05.660.777 I 
+diffusion step: 10/48 [==========                                        ] 20%1.05.859.849 I 
+diffusion step: 11/48 [===========                                       ] 22%1.06.060.086 I 
+diffusion step: 12/48 [============                                      ] 25%1.06.263.344 I 
+diffusion step: 13/48 [=============                                     ] 27%1.06.465.103 I 
+diffusion step: 14/48 [==============                                    ] 29%1.06.665.648 I 
+diffusion step: 15/48 [===============                                   ] 31%1.06.867.098 I 
+diffusion step: 16/48 [================                                  ] 33%1.07.067.886 I 
+diffusion step: 17/48 [=================                                 ] 35%1.07.268.801 I 
+diffusion step: 18/48 [==================                                ] 37%1.07.472.799 I 
+diffusion step: 19/48 [===================                               ] 39%1.07.673.644 I 
+diffusion step: 20/48 [====================                              ] 41%1.08.270.224 I 
+diffusion step: 0/48 [                                                  ] 0%1.08.450.863 I 
+diffusion step: 1/48 [=                                                 ] 2%1.08.637.170 I 
+diffusion step: 2/48 [==                                                ] 4%1.08.826.901 I 
+diffusion step: 3/48 [===                                               ] 6%1.09.019.204 I 
+diffusion step: 4/48 [====                                              ] 8%1.09.214.988 I 
+diffusion step: 5/48 [=====                                             ] 10%1.09.410.680 I 
+diffusion step: 6/48 [======                                            ] 12%1.09.613.059 I 
+diffusion step: 7/48 [=======                                           ] 14%1.09.815.038 I 
+diffusion step: 8/48 [========                                          ] 16%1.10.017.270 I 
+diffusion step: 9/48 [=========                                         ] 18%1.10.223.319 I 
+diffusion step: 10/48 [==========                                        ] 20%1.10.429.463 I 
+diffusion step: 11/48 [===========                                       ] 22%1.10.634.792 I 
+diffusion step: 12/48 [============                                      ] 25%1.10.839.887 I 
+diffusion step: 13/48 [=============                                     ] 27%1.11.044.841 I 
+diffusion step: 14/48 [==============                                    ] 29%1.11.248.847 I 
+diffusion step: 15/48 [===============                                   ] 31%1.11.453.933 I 
+diffusion step: 16/48 [================                                  ] 33%1.11.659.298 I 
+diffusion step: 17/48 [=================                                 ] 35%1.11.863.968 I 
+diffusion step: 18/48 [==================                                ] 37%1.12.068.463 I 
+diffusion step: 19/48 [===================                               ] 39%

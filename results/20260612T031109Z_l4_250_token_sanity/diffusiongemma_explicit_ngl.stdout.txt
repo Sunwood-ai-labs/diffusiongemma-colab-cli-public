@@ -1,0 +1,25 @@
+
+<|channel>thought
+Robot barista calibrating espresso shots in a tiny Mars cafe.
+Technical lab note.
+At least 280 English words.
+Environment, Calibration Procedure, Observations, Failure Modes, Conclusion.
+Continuous text (no stopping early).
+
+    *   *Environment:* Mars-based, low gravity (0.38g), pressurized habitat, potential dust issues, limited water supply.
+    *   *Calibration Procedure:* Grinding size adjustment, water pressure control, tamping force (adjusted for gravity), extraction time monitoring.
+    *   *Observations:* Crema density, flow rate consistency, effect of gravity on fluid dynamics/surface tension.
+    *   *Failure Modes:* Pump clogging from fine dust, sensor drift due to pressure fluctuations, mechanical vibration interference.
+    *   *Conclusion:* Success of the calibration, recommendations for future-proofing.
+
+    *   *Environment:* Start with the setting. Location: Ares-3 outpost. Habitat-based. Gravity is the key factor. Pressure is at 1.0 atm. Dust levels are a concern.
+    *   *Calibration Procedure:* The robot is "Unit B-Barista." It needs to calibrate the espresso. First, the grind. Because of low gravity, the coffee bed settles differently. Then, the tamping. It needs to compensate for the weight reduction of the tamper. Finally, the extraction flow.
+    *   *Observations:* What did we see? The crema was thicker? The flow rate was slower than Earth-standard models? Surface tension is more dominant in low gravity.
+    *   *Failure Modes:* What happens if Martian dust gets in the grinder? What if the pressure sensor fails because the thin atmosphere fluctuates?
+    *   *Conclusion:* It works, but needs a specific Mars-gravity algorithm.
+
+    *   *Environment section:* The experiment took place within the pressurized confines of Habitat 4, Valles Marineris. The atmospheric pressure is maintained at 101.3 kPa for human safety, but the gravitational constant remains at approximately 0.38g. The ambient humidity is controlled at 45% to prevent equipment desiccation, necessitating precise monitoring of the coffee bean hygroscopy.
+
+    *   *Calibration Procedure section:* Unit RX-900 initiated a 5-point calibration sequence. First, the rotary burr grinder was adjusted to achieve a target particle size of 400 microns. The tamping mechanism was recalibrated to apply
+total time: 9191.46ms, time per step: 224.18ms (41 steps over 2 blocks, entropy-bound)
+throughput: 55.7 tok/s (512 tok in 9191.46ms), in-step parallel 1142 tok/s (256-tok canvas x 20.5 steps/block)

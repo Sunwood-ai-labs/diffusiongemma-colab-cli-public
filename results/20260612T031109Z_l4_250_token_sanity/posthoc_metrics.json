@@ -1,0 +1,23 @@
+{
+  "source": "stdout/stderr parsed after local download",
+  "diffusiongemma_explicit_ngl": {
+    "diffusion_total_ms": 9191.46,
+    "diffusion_step_ms": 224.18,
+    "diffusion_steps": 41,
+    "diffusion_blocks": 2,
+    "diffusion_canvas_tokens_per_second": 55.7,
+    "diffusion_canvas_tokens": 512,
+    "diffusion_canvas_total_ms": 9191.46,
+    "diffusion_in_step_parallel_tokens_per_second": 1142.0
+  },
+  "gemma4_cli_chat": {
+    "prompt_tokens_per_second": 249.6,
+    "generation_tokens_per_second": 67.7
+  },
+  "comparison": {
+    "reported_throughput_ratio_diffusion_over_gemma4": 0.8227474150664697,
+    "diffusion_lower_by_percent": 17.72525849335303,
+    "elapsed_ratio_diffusion_over_gemma4": 1.1070904084442418,
+    "diffusion_elapsed_slower_by_percent": 10.709040844424173
+  }
+}

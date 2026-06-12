@@ -1,0 +1,47 @@
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9600-10a2613aa
+model      : gemma-4-26B-A4B-it-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> Write a detailed technical lab note of at least 280 English words about a robot barista calibrating espresso shots in a tiny Mars cafe. Include sections for environment, calibration procedure, observations, failure modes, and conclusion. Keep the answer continuous and do not stop early.
+
+|-\ [Start thinking]
+*   Topic: Robot barista calibrating espresso shots in a tiny Mars cafe.
+*   Format: Detailed technical lab note.
+*   Length: At least 280 English words.
+*   Required Sections: Environment, Calibration Procedure, Observations, Failure Modes, Conclusion.
+*   Style: Continuous (no stopping early).
+
+    *   *Environment:* Low gravity (0.38g), pressurized habitat, dust/regolith presence, temperature fluctuations, high-pressure espresso extraction vs. low-pressure atmosphere.
+    *   *Robot Barista:* Model name (e.g., Unit B-42 "BrewMaster"), sensors (pressure, flow, temperature), actuators (tamper, portafilter).
+    *   *Calibration Procedure:* Grind size adjustment, dose weight, extraction time, yield, temperature stability.
+    *   *Observations:* Flow rate, crema quality, pressure profiles, impact of gravity on liquid behavior.
+    *   *Failure Modes:* Clogging due to regolith, pump cavitation, seal leakage in low-pressure environments, sensor drift.
+    *   *Conclusion:* Success/failure of the calibration, next steps.
+
+    *   *Header:* Lab Note ID, Date, Location, Subject.
+    *   *Environment:* Describe the "Ares-1 Habitat" or similar. Mention the 0.38g gravity and the pressurized, dust-controlled environment.
+    *   *Calibration Procedure:* Step-by-step. 1. Dose measurement.
+
+[ Prompt: 249.6 t/s | Generation: 67.7 t/s ]
+
+Exiting...
